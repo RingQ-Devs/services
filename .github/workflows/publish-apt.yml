@@ -7,6 +7,7 @@ on:
       - 'pool/**'
       - 'conf/**'
       - 'keys/**'
+      - 'extras/**'
       - '.github/workflows/publish-apt.yml'
   workflow_dispatch: {}
 
@@ -59,33 +60,41 @@ jobs:
               --sign --output /dev/null
           echo "✓ gpg-agent primed"
 
-      - name: Stage incoming .debs
+      - name: Migrate any legacy _incoming/ debs to pool/main/f/freeswitch/
+        run: |
+          # One-time / idempotent migration from the early staging layout.
+          # Going forward, drop .debs directly into pool/main/f/freeswitch/.
+          mkdir -p pool/main/f/freeswitch
+          if ls pool/main/_incoming/*.deb >/dev/null 2>&1; then
+            echo "Migrating $(ls -1 pool/main/_incoming/*.deb | wc -l) .deb(s) from _incoming/ to f/freeswitch/"
+            mv pool/main/_incoming/*.deb pool/main/f/freeswitch/
+          fi
+          rm -rf pool/main/_incoming pool/main/_archived 2>/dev/null || true
+
+      - name: Count .debs to publish
         id: stage
         run: |
-          mkdir -p pool/main/_incoming
-          count=$(ls -1 pool/main/_incoming/*.deb 2>/dev/null | wc -l)
+          count=$(ls -1 pool/main/f/freeswitch/*.deb 2>/dev/null | wc -l)
           echo "count=$count" >> "$GITHUB_OUTPUT"
           if [ "$count" -eq 0 ]; then
-            echo "No .deb files in pool/main/_incoming/. Nothing to publish."
+            echo "No .debs found in pool/main/f/freeswitch/. Nothing to publish."
           else
-            echo "$count .deb file(s) staged for inclusion."
-            ls -lh pool/main/_incoming/*.deb
+            echo "$count .deb(s) will be included in the apt repo."
           fi
 
-      - name: Build apt repo with reprepro
+      - name: Build apt repo with reprepro (idempotent rebuild)
         if: steps.stage.outputs.count != '0'
         env:
           RINGQ_SIGNING_KEY_ID: ${{ secrets.RINGQ_SIGNING_KEY_ID }}
         run: |
-          # reprepro picks up SignWith from conf/distributions. With our gpg-agent
-          # primed and the key marked ultimately trusted, signing is non-interactive.
-          for deb in pool/main/_incoming/*.deb; do
-            echo "Including: $deb"
+          # Wipe dists/ and the reprepro state DB so every run rebuilds from
+          # scratch off whatever's currently in pool/main/f/freeswitch/.
+          # Idempotent — re-running on the same input is a no-op output-wise.
+          rm -rf dists db
+          for deb in pool/main/f/freeswitch/*.deb; do
             reprepro --basedir . includedeb bookworm "$deb"
           done
-          # Archive processed debs so they aren't re-included next run
-          mkdir -p pool/main/_archived
-          mv pool/main/_incoming/*.deb pool/main/_archived/ 2>/dev/null || true
+          echo "✓ rebuilt dists/bookworm from $(ls -1 pool/main/f/freeswitch/*.deb | wc -l) .deb(s)"
 
       - name: Verify Release is signed
         if: steps.stage.outputs.count != '0'
@@ -116,7 +125,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: .
-          exclude_assets: '.github,conf,pool/main/_incoming,tools'
+          exclude_assets: '.github,conf,db,tools'
           force_orphan: false
           enable_jekyll: false
           commit_message: "publish: ${{ github.sha }}"
