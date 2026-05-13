@@ -30,6 +30,15 @@ fi
 apt-get update
 apt-get install -y gdb ntp
 apt-get install -y freeswitch-meta-bare freeswitch-conf-vanilla freeswitch-mod-commands freeswitch-mod-console freeswitch-mod-logfile
+
+# RingQ patch: freeswitch-conf-vanilla only ships templates at
+# /usr/share/freeswitch/conf/vanilla/. Copy them into /etc/freeswitch/ so the
+# subsequent sed calls in this script (and FusionPBX's xml.sh) have files to
+# operate on. Without this, FreeSWITCH starts with no config and crashes.
+if [ ! -d /etc/freeswitch/autoload_configs ] && [ -d /usr/share/freeswitch/conf/vanilla ]; then
+	cp -r /usr/share/freeswitch/conf/vanilla/* /etc/freeswitch/
+	chown -R www-data:www-data /etc/freeswitch
+fi
 # RingQ patch: sound packages (freeswitch-sounds-*, freeswitch-music-default)
 # removed from the mirror. The say modules remain because they're code, not audio.
 # If voice prompts / hold music are needed later, re-mirror those packages and
