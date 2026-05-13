@@ -107,11 +107,15 @@ jobs:
       - name: Bundle vendored FusionPBX installer
         run: |
           # Tar the vendored FusionPBX installer (Debian-only) and drop it in
-          # extras/. The installer scripts curl this tarball instead of rsync'ing
-          # from the file server.
+          # extras/. The installer scripts curl this tarball and extract it
+          # directly into /usr/src/fusionpbx-install.sh/, so the tarball's top
+          # level must be debian/ (not fusionpbx-install/debian/) — use -C to
+          # strip the wrapping dir at tar time.
           if [ -d fusionpbx-install/debian ]; then
             mkdir -p extras
-            tar -czf extras/fusionpbx-install-debian.tar.gz fusionpbx-install/debian
+            tar -czf extras/fusionpbx-install-debian.tar.gz -C fusionpbx-install debian
+            echo "Tarball top-level entries:"
+            tar -tzf extras/fusionpbx-install-debian.tar.gz | head -3
             ls -lh extras/fusionpbx-install-debian.tar.gz
           else
             echo "::warning::fusionpbx-install/debian not found — tarball not built"
