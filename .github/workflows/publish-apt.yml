@@ -104,6 +104,19 @@ jobs:
           gpg --verify dists/bookworm/InRelease
           echo "✓ InRelease signature verifies"
 
+      - name: Bundle vendored FusionPBX installer
+        run: |
+          # Tar the vendored FusionPBX installer (Debian-only) and drop it in
+          # extras/. The installer scripts curl this tarball instead of rsync'ing
+          # from the file server.
+          if [ -d fusionpbx-install/debian ]; then
+            mkdir -p extras
+            tar -czf extras/fusionpbx-install-debian.tar.gz fusionpbx-install/debian
+            ls -lh extras/fusionpbx-install-debian.tar.gz
+          else
+            echo "::warning::fusionpbx-install/debian not found — tarball not built"
+          fi
+
       - name: Smoke test against bookworm container
         run: |
           # Run a quick apt-get update inside a docker container pointing at the
@@ -125,7 +138,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: .
-          exclude_assets: '.github,conf,db,tools'
+          exclude_assets: '.github,conf,db,tools,fusionpbx-install'
           force_orphan: false
           enable_jekyll: false
           commit_message: "publish: ${{ github.sha }}"
