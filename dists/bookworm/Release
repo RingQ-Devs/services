@@ -2,19 +2,19 @@ Origin: RingQ-Devs
 Label: RingQ Services
 Suite: stable
 Codename: bookworm
-Date: Wed, 13 May 2026 06:23:39 UTC
+Date: Wed, 13 May 2026 07:16:56 UTC
 Architectures: amd64
 Components: main
 Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm
 MD5Sum:
- 9921a4937e0b637e5962821da91b25dc 172206 main/binary-amd64/Packages
- 546c77547a7370928ceb2027febebedb 23544 main/binary-amd64/Packages.gz
+ 9a0d59437c436e493c325e0d44ea73b8 176155 main/binary-amd64/Packages
+ 3bb47237c36026d964951c88e6eac627 25041 main/binary-amd64/Packages.gz
  43a8ae313261568804b527bff2a07daa 171 main/binary-amd64/Release
 SHA1:
- dba38638aae07e126e7a4605477dc691c6721e4a 172206 main/binary-amd64/Packages
- d2f92bf9efa20604f44a795f777b53a19b9ecd19 23544 main/binary-amd64/Packages.gz
+ ba585e04307c3f83d58b4db82e0bc460268a9db7 176155 main/binary-amd64/Packages
+ 9f8747365d7d1bb4d7e1745ea2755c2dc578935f 25041 main/binary-amd64/Packages.gz
  8803fe14acc7a540ffc04bd418dfbef0afc0995d 171 main/binary-amd64/Release
 SHA256:
- d98b7d2ecbb3c4a3f86d17cd41f5eae255b7cb030443d0d079c99e91d6abb1f3 172206 main/binary-amd64/Packages
- 398d10ee2387d1818aec01398911a03fb1ed9d0e8fe660f6104de64c52d59f74 23544 main/binary-amd64/Packages.gz
+ c7a931957bbc0b87b649e1cfc3ade5aaa4cf6639cf59a74901540a2aa9e522e5 176155 main/binary-amd64/Packages
+ ccc9d46455f957ffb8166e50804bb1308fd27c212af36240a38a3f1245e690fc 25041 main/binary-amd64/Packages.gz
  305995b7c3505ef228e935c6a2bc467ca6641957ddb0a3cb0f9c81c9a9b12336 171 main/binary-amd64/Release

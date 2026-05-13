@@ -5,35 +5,35 @@ Origin: RingQ-Devs
 Label: RingQ Services
 Suite: stable
 Codename: bookworm
-Date: Wed, 13 May 2026 06:23:39 UTC
+Date: Wed, 13 May 2026 07:16:56 UTC
 Architectures: amd64
 Components: main
 Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm
 MD5Sum:
- 9921a4937e0b637e5962821da91b25dc 172206 main/binary-amd64/Packages
- 546c77547a7370928ceb2027febebedb 23544 main/binary-amd64/Packages.gz
+ 9a0d59437c436e493c325e0d44ea73b8 176155 main/binary-amd64/Packages
+ 3bb47237c36026d964951c88e6eac627 25041 main/binary-amd64/Packages.gz
  43a8ae313261568804b527bff2a07daa 171 main/binary-amd64/Release
 SHA1:
- dba38638aae07e126e7a4605477dc691c6721e4a 172206 main/binary-amd64/Packages
- d2f92bf9efa20604f44a795f777b53a19b9ecd19 23544 main/binary-amd64/Packages.gz
+ ba585e04307c3f83d58b4db82e0bc460268a9db7 176155 main/binary-amd64/Packages
+ 9f8747365d7d1bb4d7e1745ea2755c2dc578935f 25041 main/binary-amd64/Packages.gz
  8803fe14acc7a540ffc04bd418dfbef0afc0995d 171 main/binary-amd64/Release
 SHA256:
- d98b7d2ecbb3c4a3f86d17cd41f5eae255b7cb030443d0d079c99e91d6abb1f3 172206 main/binary-amd64/Packages
- 398d10ee2387d1818aec01398911a03fb1ed9d0e8fe660f6104de64c52d59f74 23544 main/binary-amd64/Packages.gz
+ c7a931957bbc0b87b649e1cfc3ade5aaa4cf6639cf59a74901540a2aa9e522e5 176155 main/binary-amd64/Packages
+ ccc9d46455f957ffb8166e50804bb1308fd27c212af36240a38a3f1245e690fc 25041 main/binary-amd64/Packages.gz
  305995b7c3505ef228e935c6a2bc467ca6641957ddb0a3cb0f9c81c9a9b12336 171 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEj9jU2OLRwPdRoOJYGcRwIKFlZdYFAmoEGOsACgkQGcRwIKFl
-ZdYt/Q/9EZES7r/eIU6Pwm3wfjrqhX2lVAuV2KN2GfgykrisGSY1RgafiDW6dDPp
-UJtv5/I2OYEAWBTfZXtvJCzy6LcU5/eY5Kf77Ogy3DBUFZndyK1D8ET5Pre1FM6V
-WiOhR3nyOcnVG6yHmtApZiG81GXkeMJWjQJv0jid6QbO4r6G1Sl1DYuFtKb0F6sc
-IIym/jllpFX7ERCOWQImyc6/llURczuYabctoPeWG9NUE/n1RbiWOFunaGQlZKO0
-j9Y1yzsajAL5JivST3seE6hSxx2BMppyZbCOQTzSGwwyM8dUgu7x7/KSe7UUUQ59
-vPMN/ZHYBSw1WQL3HFkGDSUMr8SAFFMaxBn/twhfVlI+IsNJPK5+LfAtw7iDA7LM
-G3QYwYShFUeXgSEhOWDSQxlVITD6oQNlcXVjWikU1dWmEwDp8uQkT/gvhDRaQr/J
-R9RbBkEjNux6/60wTOqx7cONml0mXo/tJId+NEuqedx8MxXCnxLkoR8rCUQaQQSF
-XJU/CTbmydKeUkGgllyqdrZ/Xw2C8Ulr7eB7P6Ywzt2VYICy5HewfbpR3Io8dkkK
-3Mi4MpxOE6rvLLNN4TqEXHo1qluG04tllPp6YLBzZT3dJnDaOKGUcq1QYYhtHafM
-R6tRCTbuOe1icTzOXhX33XqLbSBpzlVqp7CScZ6v89B5RhjgJts=
-=/t4M
+iQIzBAEBCgAdFiEEj9jU2OLRwPdRoOJYGcRwIKFlZdYFAmoEJWgACgkQGcRwIKFl
+Zda3Dg/+O3hdPIsnhji0lEH/8E+RseBiw1mnyxCG6H3THi1bvZzaAedb1Ma2P9PS
+LZLfRgF7eC9AJ4GuOzH4+uVkS78L1u0Xr75XX6jNNJjC7KsEtKml5xtg/zKXQ1dK
++AwiWEIKd/TqygFD4tkl7PAitvRA9NAwo/JXw4Zwp53AT/TpZfc9vHQ/u8DCsNiW
+c6wkLaqlP+8n4cetGqCzuBea2my+5d7mTpkIFps1ayHWlgFYYJWufpyawSBpkh0c
+GcHu/UGm+DouanDJZwg2yA7oVrZWFe6zwYHMa4cwJ/Gyn8EiZr3FRjHOSeuURIHl
++x4kWA9LIiSx2B7YxjKc3EpjWR9J5/0Af8ddYi1ZhZ+nX8EH8Gkmk80m9O570sjx
+h9OMTkzMw8vxLw2nTkx7rJObsj1Au/Vj/fWMquo/sq6+HXFNsvyQXGbyNUWwX5U4
+SQRt1LUcc4gS7E/UnJ9wezvg2+sXTase0dfQYQDw902TmCca/0F/AaADaPkuh+qx
+J6+LZKsqEIqX0WKluqyH0a276BIdLeN/Lqc7//r4C1Lr3aETBY3/szpf2k2nNMhG
+bMYS8Jsfvsz26bM0YpJ3QInDT05kvxMODeWid5YVGe/nR8DrUh7owtPrxnmi9RP/
+BD5MVJJIatF546neuGHOwvlmG2Lo/ayo2teQ6YPJNbwmoQPcvtg=
+=rDAB
 -----END PGP SIGNATURE-----
