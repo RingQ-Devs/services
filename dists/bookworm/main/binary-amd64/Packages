@@ -1,0 +1,4176 @@
+Package: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 2803
+Depends: libc6 (>= 2.34), libedit2 (>= 3.1-20140620-0), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), perl:any
+Suggests: freeswitch-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 1240460
+SHA256: 820291537ff0998c607e2945c375f971b9ffd0224b47703fe8faacdd6a9d1167
+SHA1: 258a9dfc1a88c1685bac757a6b03df6ccc700d2e
+MD5sum: 86f7449c8b133628cba16babb3e9d268
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains the FreeSWITCH core.
+
+Package: freeswitch-all
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 198
+Depends: freeswitch-meta-all (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-meta-all-dbg (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-all_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126972
+SHA256: 6362fadeb2b8ccfeb37e63108cb86d1c8819cabd9d200434c4fd8d617e5e5b18
+SHA1: f357eca4d91490cb5df547970c92343100ffd042
+MD5sum: cff09b4e6b2dfb1745e5024407e56fb9
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This is a package which depends on all packaged FreeSWITCH modules.
+
+Package: freeswitch-conf-vanilla
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1128
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-conf-vanilla_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 223164
+SHA256: 824847d86df2c3a107fc3568ac8cecde978cbfc2564224d7ebaf6af9b11fb43c
+SHA1: 973f86cc498c7dbcb45d4069b12810f1a233038f
+MD5sum: b85f6de6cbf4ac5592c39bff626aba13
+Description: FreeSWITCH vanilla configuration
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains the vanilla configuration for FreeSWITCH.
+
+Package: freeswitch-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 2338
+Depends: freeswitch (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 573240
+SHA256: db79d8fa8e24e432a6717cd9fbe8a4a8313e25fb588966662582095142237533
+SHA1: 0936cbf004a353c73659891c1cd01bb6ff22f7d8
+MD5sum: 7822f1f9c0448faf4113976b86bb4503
+Description: debugging symbols for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for FreeSWITCH.
+
+Package: freeswitch-doc
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 197
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: doc
+Filename: pool/main/f/freeswitch/freeswitch-doc_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126364
+SHA256: 2d9a9c8c93452b162a762452b0d63a1b5c4086bd3ca2ece3c528de1d886341e9
+SHA1: a9c32cd772061f358248027879ebacb75aab4ea6
+MD5sum: 09366e5c6d0a6e41cf750dbdcc0b3c52
+Description: documentation for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains Doxygen-produced documentation for FreeSWITCH.
+ It may be an empty package at the moment.
+
+Package: freeswitch-lang
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 197
+Depends: freeswitch-lang-en (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-lang_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126380
+SHA256: f79c4d1c38998ed4dedcc2be210b27576ddf31bf4eb90ac0088b88137241cde9
+SHA1: 294955421258c076072dd6db33cc8d5e5d9a01e5
+MD5sum: 0c04b063bba6f054a36fb27d22abf7f3
+Description: Language files for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This is a metapackage which depends on the default language packages
+ for FreeSWITCH.
+
+Package: freeswitch-lang-en
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 282
+Recommends: freeswitch-sounds-en
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-lang-en_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 133224
+SHA256: 1b5c564b0b395ae45609f859bcb997c43c4c0a143728a3e912dc3e16bfaf1bf1
+SHA1: 9b6003290a5e01de975c0701dad1b87dbc0b7213
+MD5sum: 54d970940e38d125279f1fae900bf4b2
+Description: English language files for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package includes the English language files for FreeSWITCH.
+
+Package: freeswitch-meta-bare
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 197
+Depends: freeswitch (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Recommends: freeswitch-doc (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-commands (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-init, freeswitch-lang (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-timezones (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-music, freeswitch-sounds
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-meta-bare_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126456
+SHA256: c3114a9d0e91859013df6adabcc12899eee9ff5657ddb4d4cc59c38b941265f3
+SHA1: 804ae2692ab6633241ccae3ae11587c44e7a84bf
+MD5sum: 65212bfb0a3bf0b8f38b3be223b4a434
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This is a metapackage which depends on the packages needed for a very
+ bare FreeSWITCH install.
+
+Package: freeswitch-meta-codecs
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 197
+Depends: freeswitch (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-amr (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-amrwb (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-b64 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-bv (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-codec2 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-dahdi-codec (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-g723-1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-g729 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-h26x (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-isac (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-mp4v (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-opus (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-silk (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-spandsp (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-theora (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-ilbc (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-siren (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-meta-codecs_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126504
+SHA256: 96f392be3945aa279e8c52011702baf12956c1185f5f46c357f17368b1958247
+SHA1: e70ea06f8add4a6563402a66a947f53899c2f119
+MD5sum: f43d4125c8329d1bcc8f06e6c76067e3
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This is a metapackage which depends on the packages needed to install
+ most FreeSWITCH codecs.
+
+Package: freeswitch-meta-mod-say
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 197
+Depends: freeswitch-mod-say-de (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-en (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-es (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-fa (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-fr (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-he (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-hr (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-hu (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-it (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-ja (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-nl (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-pl (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-pt (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-ru (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-th (= 1.10.12-release-10222002881-a88d069d6f~bookworm), freeswitch-mod-say-zh (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-meta-mod-say_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 126456
+SHA256: 44e3b2e87a54e1858a9dfeaab0ff2e576a840a240066f3b1e7be5b997bf61610
+SHA1: 5699b6a3b8a83d779e96cd6ba89831280172ec30
+MD5sum: fcfb0680e071a07732f942845b5584d7
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This is a metapackage which depends on all mod_say languages for
+ FreeSWITCH.
+
+Package: freeswitch-mod-amr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libopencore-amrnb0 (>= 0.1.6)
+Suggests: freeswitch-mod-amr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-amr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132708
+SHA256: 104df56edcbf97488ce26e14bbb023a5f72ca8e4cfa7ebab75749a75d809b28f
+SHA1: ead4268bbe23ec3442c11aadd77281f9c08061d6
+MD5sum: 35ae9ecd3470037994e3deaaf73790fc
+Description: mod_amr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_amr for FreeSWITCH.
+ .
+ Adds mod_amr.
+
+Package: freeswitch-mod-amr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 483
+Depends: freeswitch-mod-amr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-amr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 223288
+SHA256: 71f78e0de1c5a09b49bc44875fecd891952a135495f5a816851f9fa540447c06
+SHA1: 90b0ad5d6a2189dba76d7177c7731b24be355c1a
+MD5sum: 8480519a4b4b6226da5a861f373e970f
+Description: mod_amr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_amr for FreeSWITCH.
+ .
+ Adds mod_amr.
+
+Package: freeswitch-mod-amrwb
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-amrwb-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-amrwb_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129056
+SHA256: d37b37fffbfef83c18a5f90bf3fd01c2cf3f13eeb1c787666dc6dd8cf34051bb
+SHA1: 649b32bb183ee83812bd6ac7d607fb3568d8bb08
+MD5sum: 4bee8c489555f5d74e962e9397491f6c
+Description: mod_amrwb for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_amrwb for FreeSWITCH.
+ .
+ Adds mod_amrwb.
+
+Package: freeswitch-mod-amrwb-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 451
+Depends: freeswitch-mod-amrwb (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-amrwb-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 212620
+SHA256: 91b49c28ae4be3aa49fddb0e76c64e825af368d82260227c8fbffb1634d0391c
+SHA1: 07228be783d7eea45341a5b24ee442520d214d75
+MD5sum: e5adf6b2a713776d31b9753defa59fb0
+Description: mod_amrwb for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_amrwb for FreeSWITCH.
+ .
+ Adds mod_amrwb.
+
+Package: freeswitch-mod-av
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 292
+Depends: libavcodec59 (>= 7:5.0), libavformat59 (>= 7:5.0), libavutil57 (>= 7:5.1), libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libswresample4 (>= 7:5.0), libswscale6 (>= 7:5.0)
+Suggests: freeswitch-mod-av-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-av_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 160456
+SHA256: 14290fdff87beec0cebac4ff5e1cfa48d6622839a8ebacab904226fb867039fe
+SHA1: 1e117765a29737bea34d4ecf2528296892ed327b
+MD5sum: 7991c62cdba0d1b7d201983e1df61044
+Description: mod_av for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_av for FreeSWITCH.
+ .
+ Adds mod_av.
+
+Package: freeswitch-mod-av-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 754
+Depends: freeswitch-mod-av (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-av-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 320292
+SHA256: 4e57ff0f481ee11ee434512ca6496db5fda44f06c5e56569f3e0609233f689ba
+SHA1: e1ec35ecab044d8db8df769217c8ac9d411635b2
+MD5sum: 1e0ed319d98e574efa07ea84328e033d
+Description: mod_av for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_av for FreeSWITCH.
+ .
+ Adds mod_av.
+
+Package: freeswitch-mod-avmd
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 259
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-avmd-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-avmd_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 145904
+SHA256: 76316cc2142b70b3815c2bca3d4532df07ac33d7edd150b531c30e0d6943596e
+SHA1: cee6b64ca35b45ed5ac94df49658802ed0339f45
+MD5sum: 90fc8a374b4456c60b81d7e614411492
+Description: Advanced voicemail detection for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_avmd for FreeSWITCH.
+ .
+ This module attempts to determine when a voicemail system has
+ answered the call.
+
+Package: freeswitch-mod-avmd-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 561
+Depends: freeswitch-mod-avmd (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-avmd-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 250192
+SHA256: 6e91288a76702ecd432894e24cba537a5d7ccf261a5f72cacc07c5e869355b0b
+SHA1: c43d979da510f407d5b2f3ee2ed8aecd4e70da33
+MD5sum: c4bb7fac4ea6456104d32b9c583f24d7
+Description: Advanced voicemail detection for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_avmd for FreeSWITCH.
+ .
+ This module attempts to determine when a voicemail system has
+ answered the call.
+
+Package: freeswitch-mod-b64
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-b64-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-b64_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129176
+SHA256: 296a3849c4b830c90a89189d8ee948106f77a1bdec95b2fdff94db4ce6c538a7
+SHA1: 39da66a1da55d7d12203166178c0539db8605493
+MD5sum: c9aa88b8598c65b50ede51a4e67a7736
+Description: mod_b64 for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_b64 for FreeSWITCH.
+ .
+ Adds mod_b64.
+
+Package: freeswitch-mod-b64-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 451
+Depends: freeswitch-mod-b64 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-b64-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 213176
+SHA256: 13a8139e5992fff803f4694bc28a2a5210aee2a36db140b1e49efa89ea95adf2
+SHA1: 49767f203bc1e00ca06c1398c3099a0ad76baefc
+MD5sum: b4b93d0eaa7290dcdeda250c8393f016
+Description: mod_b64 for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_b64 for FreeSWITCH.
+ .
+ Adds mod_b64.
+
+Package: freeswitch-mod-bv
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libbroadvoice1, libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-bv-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-bv_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129308
+SHA256: 5082e4c1715d38f388c61efc38240410d699ec2d36966084157eb7eb98fa458a
+SHA1: acba908a6fd9b3b7ab4006945a0326270cf3fc8f
+MD5sum: be330fa3a8a392264debae2ce1c3992b
+Description: mod_bv for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_bv for FreeSWITCH.
+ .
+ Adds mod_bv.
+
+Package: freeswitch-mod-bv-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 456
+Depends: freeswitch-mod-bv (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-bv-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 214420
+SHA256: 0ef0d4a3f5a9b11a8ca70755c175b6485ceace40df057d8f82da38b3a86c5ecc
+SHA1: 07b103098b498505dbcdb24ab9bce5da1408a2ec
+MD5sum: 9b1f636058848ec662a7040316d2628e
+Description: mod_bv for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_bv for FreeSWITCH.
+ .
+ Adds mod_bv.
+
+Package: freeswitch-mod-callcenter
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 301
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-callcenter-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-callcenter_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 159020
+SHA256: cb50bcaa43e6bd94adf1466a25f7f2cf4411bd83827135d723991a82814286ad
+SHA1: 5202c43ac285bb2892f69754064aca56f74f9752
+MD5sum: 88e2e6d2f83f372e6c4bea7b4d6b3b88
+Description: Call center for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_callcenter for FreeSWITCH.
+ .
+ This module implements Automated Call Distribution (ACD) queues.
+
+Package: freeswitch-mod-callcenter-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 613
+Depends: freeswitch-mod-callcenter (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-callcenter-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 269724
+SHA256: 82e03fa30c326f989d53d23efa934a7dd39dfd9f9753ebd510b1c629b36c01c8
+SHA1: 50489ea802dcd029c013893e356dcbc88915917b
+MD5sum: 1b920f5dad252fdbe7ba4f62c960063a
+Description: Call center for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_callcenter for
+ FreeSWITCH.
+ .
+ This module implements Automated Call Distribution (ACD) queues.
+
+Package: freeswitch-mod-cdr-csv
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.33), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-cdr-csv-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-cdr-csv_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132640
+SHA256: 9b797935f58743747fa764e61b082463705fe41489f76f36aa66fd71b9666383
+SHA1: 76d9462ea7a4232ff2719becbd7341cb10784f64
+MD5sum: 0110706326e57c81df4c3431d2872ef7
+Description: mod_cdr_csv for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_cdr_csv for FreeSWITCH.
+ .
+ Adds mod_cdr_csv.
+
+Package: freeswitch-mod-cdr-csv-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 467
+Depends: freeswitch-mod-cdr-csv (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-cdr-csv-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 219092
+SHA256: c7318810dac9ccd5b6fae7ee5a6b64c4191df6f3ce2f8f34c512555e8e3dc31a
+SHA1: 1a775939405085ea05296890c5ac389a7e8601af
+MD5sum: 656d9eeafee0a30c21e0d14863ab5c4e
+Description: mod_cdr_csv for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_cdr_csv for
+ FreeSWITCH.
+ .
+ Adds mod_cdr_csv.
+
+Package: freeswitch-mod-cidlookup
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 231
+Depends: libc6 (>= 2.7), libcurl4 (>= 7.16.2), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-cidlookup-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-cidlookup_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 135896
+SHA256: 63dd4006766b986041af63c4841c0e99e9d18e407d227dad81afdb6a10ee6dba
+SHA1: 1135ddc027cf9c8b9760e3657b315a979f34004c
+MD5sum: 5f6a30055686e9e7abb316ffdfa217f1
+Description: Caller ID name lookup for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_cidlookup for FreeSWITCH.
+ .
+ This module provides an API for querying caller ID name and location
+ data.
+
+Package: freeswitch-mod-cidlookup-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 524
+Depends: freeswitch-mod-cidlookup (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-cidlookup-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 237940
+SHA256: 2418ac9f274fefc256e4aadd0d1c7b65ede5b1c2fc65e4c3eac9fe46b044d980
+SHA1: 6e7805a42cec279c2111b97e1caea0331fed138e
+MD5sum: 7cad2a0dc0ad957726d6f291b34482fb
+Description: Caller ID name lookup for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_cidlookup for
+ FreeSWITCH.
+ .
+ This module provides an API for querying caller ID name and location
+ data.
+
+Package: freeswitch-mod-codec2
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.2.5), libcodec2-1.0 (>= 1.0.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-codec2-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-codec2_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129616
+SHA256: dfb9281a6c2f1ba79c75677ae3cd068e53350aca513ec1caf265001371b73193
+SHA1: 67a1aaf6cd638b0c27501cda1043854d9d6d1e56
+MD5sum: 66852e89be462712ead356751306aca2
+Description: mod_codec2 for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_codec2 for FreeSWITCH.
+ .
+ Adds mod_codec2.
+
+Package: freeswitch-mod-codec2-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 454
+Depends: freeswitch-mod-codec2 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-codec2-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 214008
+SHA256: 0f9d2fd3b7c575512b0ae4d2d26088be77d2ece4b9843e525e97df0c3032373f
+SHA1: d199ebc1da387d003a5e637df7bea49dba60c94e
+MD5sum: 1d577e9617fdcd3094fc8a30c350161a
+Description: mod_codec2 for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_codec2 for
+ FreeSWITCH.
+ .
+ Adds mod_codec2.
+
+Package: freeswitch-mod-commands
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 369
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-commands-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-commands_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 179080
+SHA256: 64cc5ea6b47af24148cea8763f9e22789665d88250630364ac2865a69fe778f7
+SHA1: 4b2840400be6c3f7d012bddd3b8df0bfb3bcadf9
+MD5sum: 36e99353bf0a53894bc703f0cad0d02a
+Description: Command module for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_commands for FreeSWITCH.
+ .
+ This module provides miscellaneous API commands.
+
+Package: freeswitch-mod-commands-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 789
+Depends: freeswitch-mod-commands (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-commands-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 324724
+SHA256: 0d4b38e93460dff03c502037795cddf68496e7cb5dd180e7b12519ead49c5d47
+SHA1: ac36bb1b71c2c9f23bfcd43d32f537771df620f8
+MD5sum: cc4722d342ae69e39ef995350edae616
+Description: Command module for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_commands for
+ FreeSWITCH.
+ .
+ This module provides miscellaneous API commands.
+
+Package: freeswitch-mod-conference
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 545
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-conference-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-conference_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 258472
+SHA256: 457e2d412332c675e11bf0ee1097b8b73f8db20aad74cc9cc79b95f1b9c5c4b7
+SHA1: e8b50d2e0174002347412961d6e852322491f2f3
+MD5sum: 9d73cec69f7e773e0825097b4155e1e0
+Description: Conference for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_conference for FreeSWITCH.
+ .
+ This module provides multi-party conferencing.
+
+Package: freeswitch-mod-conference-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1550
+Depends: freeswitch-mod-conference (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-conference-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 535264
+SHA256: 23ea899e3a747cab9d442b4af836d16383c37a5e8c47aca3532afad6ed3125e9
+SHA1: 29e122d8b4686348e4a488cd2b8549ceb62c9289
+MD5sum: 2556f9ee1469088dd282af68f4b23019
+Description: Conference for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_conference for
+ FreeSWITCH.
+ .
+ This module provides multi-party conferencing.
+
+Package: freeswitch-mod-console
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.15), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-console-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-console_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132172
+SHA256: 773993350d208b067767c0a31ff80bb75aae72005728f4cf94ee6e648dafa3ef
+SHA1: bd40b1e55ed46167df6f0902e28b09eaf067822e
+MD5sum: 2aed368a6b00b607bcf5a4c9ab8d89c6
+Description: mod_console for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_console for FreeSWITCH.
+ .
+ Adds mod_console.
+
+Package: freeswitch-mod-console-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 467
+Depends: freeswitch-mod-console (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-console-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218680
+SHA256: bf7150498a78840ed76e1a4deb33865f6b98b0268459324fbf370ed81b612fb6
+SHA1: d2246afd3f98a1e321368a89279783d49292778b
+MD5sum: ec7e08fd6e8c28b608d8a741f1e96f16
+Description: mod_console for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_console for
+ FreeSWITCH.
+ .
+ Adds mod_console.
+
+Package: freeswitch-mod-dahdi-codec
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.33), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-dahdi-codec-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-dahdi-codec_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131760
+SHA256: e2719d6f4e5091970ce7117f5503f95370341b071eaba1a47ea4154f35526fd8
+SHA1: bbdd807670fb2732932aec64eaf924d9c7115ad5
+MD5sum: eda26f695e960c46a6bd1a70e7a963dc
+Description: mod_dahdi_codec for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_dahdi_codec for FreeSWITCH.
+ .
+ Adds mod_dahdi_codec.
+
+Package: freeswitch-mod-dahdi-codec-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 472
+Depends: freeswitch-mod-dahdi-codec (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-dahdi-codec-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 221580
+SHA256: cf10ae9d55d0485877d0003f2856a4b391a99c6fee49e335e7d5fd7fc6eddaa0
+SHA1: cf75703eecfcfb3081c7ffc90235d5c29ae13b4f
+MD5sum: 8886543d422c448e0c709864f173f97f
+Description: mod_dahdi_codec for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_dahdi_codec for
+ FreeSWITCH.
+ .
+ Adds mod_dahdi_codec.
+
+Package: freeswitch-mod-db
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 227
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-db-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-db_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 133368
+SHA256: e2438cd67d318d665b676bf9cfa1c5351e67fe41cff1069f860c7c1fd407b661
+SHA1: a00345b2c674b20cde4c651171e154390a252164
+MD5sum: 36ad2044d26262e41cc56dfced2aa327
+Description: DB for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_db for FreeSWITCH.
+ .
+ This module implements simple db API, group support, and limit db
+ backend.
+
+Package: freeswitch-mod-db-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 470
+Depends: freeswitch-mod-db (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-db-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 219756
+SHA256: 38a719552e5f6f509212af4195faad05a17784a1f9e2c436aaf2079feb91cbc1
+SHA1: 7551db937cbaf05a7228f68451117ac6e7f9a3c0
+MD5sum: b3a03d5439b2e1fb917e98d102c0f6c5
+Description: DB for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_db for FreeSWITCH.
+ .
+ This module implements simple db API, group support, and limit db
+ backend.
+
+Package: freeswitch-mod-dialplan-xml
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 227
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-dialplan-xml-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-dialplan-xml_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 135044
+SHA256: 09e77c8bae370d045f814d6657f85f26b7ee0568dacc8761c9f08d74c5469a3e
+SHA1: d46c1cf487d8e8b8b4389b6d810d56ed6a9624fa
+MD5sum: d215dc9bcde15574420736aeec2cb899
+Description: mod_dialplan_xml for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_dialplan_xml for FreeSWITCH.
+ .
+ Adds mod_dialplan_xml.
+
+Package: freeswitch-mod-dialplan-xml-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 479
+Depends: freeswitch-mod-dialplan-xml (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-dialplan-xml-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 223464
+SHA256: 8958cbb95fad1ca53f80b8f17b52008a39853b653ffcf6c4f1ac5098a0791f3e
+SHA1: b610e7bdccb114debe08a317d7ac3337d29e33a6
+MD5sum: 7ab0b21a55906d57f9a648a0c6d61180
+Description: mod_dialplan_xml for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_dialplan_xml for
+ FreeSWITCH.
+ .
+ Adds mod_dialplan_xml.
+
+Package: freeswitch-mod-directory
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 236
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-directory-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-directory_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 137088
+SHA256: 59cafa8585b3de3909561cbffebc459fc9a5cd6639f0f5ece7d9e79064de1942
+SHA1: 0a826bbe561b09d071f937eed409af3201798fea
+MD5sum: f140bc6edeb4b6914a481d2418b194e0
+Description: Dial by name directory for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_directory for FreeSWITCH.
+ .
+ This module implements a dial-by-name directory IVR.
+
+Package: freeswitch-mod-directory-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 490
+Depends: freeswitch-mod-directory (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-directory-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 228148
+SHA256: fd32a0d1b15ce7863a81927dcecc8f0c2f528119268c19e932b16520944d72e3
+SHA1: 8c030cc4d4468e55905cea413b11fb5d47e91628
+MD5sum: a67abc2f86729bf3efb13f826b8df5de
+Description: Dial by name directory for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_directory for
+ FreeSWITCH.
+ .
+ This module implements a dial-by-name directory IVR.
+
+Package: freeswitch-mod-distributor
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-distributor-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-distributor_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131032
+SHA256: 927e04096e54bcfd580a58f53705ea54a08a49e1d0f7763a4d78a17646d1fce4
+SHA1: 0869aceed461def281f79dd6782c5e862ef9e68d
+MD5sum: 7bf9e46ed11778eab1883eaa754893cc
+Description: Load distributor for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_distributor for FreeSWITCH.
+ .
+ This module implements a mechanism for performing load balancing.
+
+Package: freeswitch-mod-distributor-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 459
+Depends: freeswitch-mod-distributor (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-distributor-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 216920
+SHA256: a896604339daaa17c927185a58312e307cf81bb24ae8dd62920f15c0b80de3ca
+SHA1: b9aa53c5d126e36ea10b49c08be180781cf18273
+MD5sum: 03e84920541d3e4ba05363e5835288d2
+Description: Load distributor for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_distributor for
+ FreeSWITCH.
+ .
+ This module implements a mechanism for performing load balancing.
+
+Package: freeswitch-mod-dptools
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 362
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-dptools-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-dptools_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 179328
+SHA256: 7ff705bee6c8ab05b4bb009abe427be1c107d05d64eb9d7512a864262077ea29
+SHA1: c9add95e4bbd08dac2c510da14f20dc4115cb841
+MD5sum: ced2cd1d4e98312eb8d0aa3550abc976
+Description: Dialplan tools for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_dptools for FreeSWITCH.
+ .
+ This module implements basic dialplan tools.
+
+Package: freeswitch-mod-dptools-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 741
+Depends: freeswitch-mod-dptools (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-dptools-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 314220
+SHA256: 6c7ea81ea082162027b100d6fa78f8e54930bec4f981ca725fa9e71084dc93a7
+SHA1: 7185c66c2c33680684697bc5930c251b5bb95b08
+MD5sum: 60879de1850f4f88364efd7ef9eb16e3
+Description: Dialplan tools for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_dptools for
+ FreeSWITCH.
+ .
+ This module implements basic dialplan tools.
+
+Package: freeswitch-mod-enum
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 227
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libldns3 (>= 1.7.1)
+Suggests: freeswitch-mod-enum-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-enum_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 135104
+SHA256: 244b6d57aba4942c4de1b429bc8711d8f9d9f9047dcc2f9ffc05cf3d961f2402
+SHA1: 290219cf56a71852fd4d6229a6e8a5abc96956d6
+MD5sum: 961e17ffaebc7ad1a840cf55403ee282
+Description: ENUM for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_enum for FreeSWITCH.
+ .
+ This module implements ENUM support.
+
+Package: freeswitch-mod-enum-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1086
+Depends: freeswitch-mod-enum (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-enum-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 397752
+SHA256: 711f781c74f8e8e0551ec34436de4fba2691c07ee4916c96ca3156ef2b1dab29
+SHA1: 43d0a768de6faa4eb09f4037910d5d81c6c89d28
+MD5sum: f0677fa1547cc53c6e6f305a00e5bfc9
+Description: ENUM for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_enum for FreeSWITCH.
+ .
+ This module implements ENUM support.
+
+Package: freeswitch-mod-esf
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-esf-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-esf_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131996
+SHA256: 83d9da20f23b9838477c1dfc99ab485a2d0176f922cbbf6ce95b03677b9b7d09
+SHA1: 8cd2ef14c25386d44932b983a06256ead052cae1
+MD5sum: e10f050d31882e6102116b65a40fa909
+Description: Multicast support for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_esf for FreeSWITCH.
+ .
+ This module adds multi-cast support.
+
+Package: freeswitch-mod-esf-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 466
+Depends: freeswitch-mod-esf (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-esf-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218552
+SHA256: eb284b6f72cea9fe350635e0fd6ae89331f917e5c6f177a1abe5201a51001e4f
+SHA1: e0b5e13ff61b702d85b2c2b98ab066b03fca7a70
+MD5sum: 984d4bb97f3a5636e97e783fbb22febf
+Description: Multicast support for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_esf for FreeSWITCH.
+ .
+ This module adds multi-cast support.
+
+Package: freeswitch-mod-esl
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 263
+Depends: libc6 (>= 2.34), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Suggests: freeswitch-mod-esl-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-esl_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 148228
+SHA256: 68bdafc0c658f6467df1df714fa517ad2c156d558d75cc058f033b7a2c7a8425
+SHA1: eeba8a750cc51fb41dd0a41e9109f0f9ce70ca5e
+MD5sum: 9ed2240536323a37e6fec87665a790a3
+Description: Single ESL for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_esl for FreeSWITCH.
+ .
+ This module adds an API for generating one-off ESL requests.
+
+Package: freeswitch-mod-esl-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 680
+Depends: freeswitch-mod-esl (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-esl-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 289668
+SHA256: 7c760aae007a287cc718dbc9915d87a2facbbb63b690924c020f204037713755
+SHA1: 39626688a4e7204c1e7e1548d03be7f073d6fa9c
+MD5sum: 8e1b18092aa0293b1c98d36ce64742e2
+Description: Single ESL for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_esl for FreeSWITCH.
+ .
+ This module adds an API for generating one-off ESL requests.
+
+Package: freeswitch-mod-event-socket
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 268
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-event-socket-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-event-socket_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 149228
+SHA256: d0ae34ea4d7d1d5967547ee33a1432a7d71debb47a6be8e7e7ad524b270bb8ea
+SHA1: 7947e80f537f4b898ae254b9d7946a718c29a470
+MD5sum: 4bddcc5b3e0b7857d22c608cfc279cd0
+Description: mod_event_socket for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_event_socket for FreeSWITCH.
+ .
+ Adds mod_event_socket.
+
+Package: freeswitch-mod-event-socket-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 552
+Depends: freeswitch-mod-event-socket (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-event-socket-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 253808
+SHA256: 8c473e402869cf417a84d272396b2148f2d5d9b4577aa2c533cf70fb78136e18
+SHA1: 489b4f9d40301d99c49ba5c94e14063c9903f837
+MD5sum: 0d06d13972c019e42893579e75d9fa2b
+Description: mod_event_socket for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_event_socket for
+ FreeSWITCH.
+ .
+ Adds mod_event_socket.
+
+Package: freeswitch-mod-expr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 239
+Depends: libc6 (>= 2.29), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-expr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-expr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 139460
+SHA256: 2ca9934b50ddb7eebbd96a186407773b85793b88e12f956cde3a98202c73c318
+SHA1: 6ade539b77602b2a6a50a9f60af830db64807a98
+MD5sum: 6c9a2e9232a647840c427d8585864d0b
+Description: Expr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_expr for FreeSWITCH.
+ .
+ This module adds expr support for expression evaluation.
+
+Package: freeswitch-mod-expr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 538
+Depends: freeswitch-mod-expr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-expr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 239784
+SHA256: efc497631cdfa29e55a50b704f9f48010147a15858a19505ec56710e90ccc0f0
+SHA1: 4adf06cb998c555b350d202696a3c57d4237f073
+MD5sum: 6a09c4c310b721fb18af33d569b509f5
+Description: Expr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_expr for FreeSWITCH.
+ .
+ This module adds expr support for expression evaluation.
+
+Package: freeswitch-mod-fifo
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 304
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-fifo-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-fifo_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 163372
+SHA256: 8d2ea39c3336f901fce230b7a96560f82ee7e27806aeec5155a26eba4562956f
+SHA1: 0469656c0b56a79ebc3c3af2835115e6ee6f192d
+MD5sum: f07c299c881080ef892ff7becee7d12b
+Description: FIFO for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_fifo for FreeSWITCH.
+ .
+ This module adds a first-in first-out queue system.
+
+Package: freeswitch-mod-fifo-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 645
+Depends: freeswitch-mod-fifo (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-fifo-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 283436
+SHA256: 4d11c91847960af2233367c1b5a18cb1998a90e6f1e52df98b896a585af236fd
+SHA1: 44a2417c4ca4afcf333d819196c98367c37173d4
+MD5sum: a2f0b1d285316329fcb039e25fc8cdc6
+Description: FIFO for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_fifo for FreeSWITCH.
+ .
+ This module adds a first-in first-out queue system.
+
+Package: freeswitch-mod-flite
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.2.5), libflite1 (>= 1.4-release-9~), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-flite-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-flite_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129192
+SHA256: a0ab8da578e8ef865433bb67a280a8fc6649c5dc8b6c4ee70b94c7b0ba56f290
+SHA1: 6857c31bab3f3a898f4b13184a9202ba6f9badfa
+MD5sum: 73e8288df34e92d5372dc4928894e4e3
+Description: mod_flite for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_flite for FreeSWITCH.
+ .
+ Adds mod_flite.
+
+Package: freeswitch-mod-flite-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 461
+Depends: freeswitch-mod-flite (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-flite-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 215848
+SHA256: 773f3672413ed9e654631f4c3ce62b89f1a3e150bab5132f985867a4d6135284
+SHA1: 29232b8f691c8d058d24f000e1201046dd4e1831
+MD5sum: 1e9f01c91586c2a20fd0d20baeb54146
+Description: mod_flite for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_flite for FreeSWITCH.
+ .
+ Adds mod_flite.
+
+Package: freeswitch-mod-fsv
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 235
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-fsv-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-fsv_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 137460
+SHA256: cdcace5d59e6b710ce4e4fa99287d5d08f01caf9b3d32d4cc971325d36cfcc45
+SHA1: d79532c5ae0a6c963ba845d7d42f70050bc319bc
+MD5sum: d802a7f5441f9f900764e31f9087bbc2
+Description: FSV for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_fsv for FreeSWITCH.
+ .
+ This module provides dialplan applications for recording and playing
+ FSV videos.
+
+Package: freeswitch-mod-fsv-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 491
+Depends: freeswitch-mod-fsv (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-fsv-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 228680
+SHA256: cddfaf55c71f098454778ba61f207144557ce4674d9faecacdcc7bab8103c8d0
+SHA1: 55611bf5b0a1d6feeb016ea14ea26963ad6ddb67
+MD5sum: c38e1a7fbc4df9d466637bea7ce16dc7
+Description: FSV for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_fsv for FreeSWITCH.
+ .
+ This module provides dialplan applications for recording and playing
+ FSV videos.
+
+Package: freeswitch-mod-g723-1
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-g723-1-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-g723-1_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128620
+SHA256: 1bc38f9b95845356c0fe07008116184f4b2071c49b7ea5f17c33ea490a33398b
+SHA1: 9c6e27058d14718ad671ba323e221600b31c42e6
+MD5sum: 907f3f0cf444fb017a6c1d325a0bdb05
+Description: mod_g723_1 for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_g723_1 for FreeSWITCH.
+ .
+ Adds mod_g723_1.
+
+Package: freeswitch-mod-g723-1-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 449
+Depends: freeswitch-mod-g723-1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-g723-1-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 211916
+SHA256: 7a053a199afc142ce840c82478ee9dbb83300f77aa5d2bc7b09f838e692f7179
+SHA1: 54d6f38f25f0ff77c5f935b796a6eea49ebb5ad9
+MD5sum: be72d2401a2fae31fc430d3d1969316f
+Description: mod_g723_1 for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_g723_1 for
+ FreeSWITCH.
+ .
+ Adds mod_g723_1.
+
+Package: freeswitch-mod-g729
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-g729-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-g729_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128608
+SHA256: 8a1968e458a89eb8973ba9d25326e7bde4f96b33834b2d4d6769c7540bd39c31
+SHA1: 2d0348692d179bbd1b151caa5c43a555eb6e5d0e
+MD5sum: ff96a9ee9ecd65282dde0ee70bcbaac4
+Description: mod_g729 for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_g729 for FreeSWITCH.
+ .
+ Adds mod_g729.
+
+Package: freeswitch-mod-g729-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 449
+Depends: freeswitch-mod-g729 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-g729-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 211572
+SHA256: 540ae821ab57b60ed856a5aece425d63954201685c123caaa01f0191f1179196
+SHA1: f4e2ecc268e04e367fc477866bb5102ef1545174
+MD5sum: 182c58fabd693d276b9548c6ad7718dc
+Description: mod_g729 for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_g729 for FreeSWITCH.
+ .
+ Adds mod_g729.
+
+Package: freeswitch-mod-h26x
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-h26x-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-h26x_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128680
+SHA256: 098b88bd912bd08a5a7e09e0aa3693a641d06264ad8ec0d1ea28636e31cf81b0
+SHA1: f0bd8fbaab6d914e22732cc69ba221ebe3329ce1
+MD5sum: 3e2cbe02515363e03024a9bd46233675
+Description: mod_h26x for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_h26x for FreeSWITCH.
+ .
+ Adds mod_h26x.
+
+Package: freeswitch-mod-h26x-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 452
+Depends: freeswitch-mod-h26x (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-h26x-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 212472
+SHA256: 5224a217cf9b030a666cf3a644e312cc8586a758c26a00b314f809dc796afcb1
+SHA1: 23cf5d377b5e301669a22410602f6ee071d09141
+MD5sum: 6f8a198e6d4c25df84f004a16c8c3900
+Description: mod_h26x for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_h26x for FreeSWITCH.
+ .
+ Adds mod_h26x.
+
+Package: freeswitch-mod-hash
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 263
+Depends: libc6 (>= 2.34), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-hash-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-hash_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 149908
+SHA256: e3437376fd4916512368414faf8d0dc47cc7177ec0596738f6a12fcac270db7c
+SHA1: 27c67137585f6027d20cb9b25e1045939d26b7fb
+MD5sum: b2e0ab49f76a8e44c5137c971b2210db
+Description: Hash for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_hash for FreeSWITCH.
+ .
+ This module provides a hash API, a key-value in-memory datastore.
+
+Package: freeswitch-mod-hash-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 625
+Depends: freeswitch-mod-hash (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-hash-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 275672
+SHA256: c24a5280cf2c28eac1548dc3a5836504010eabff566544f4a3c308484432ece9
+SHA1: a72c04512a9ea1dec621077878985c76b9b9fdfc
+MD5sum: c953109a104a9beb43f47db51405e4f1
+Description: Hash for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_hash for FreeSWITCH.
+ .
+ This module provides a hash API, a key-value in-memory datastore.
+
+Package: freeswitch-mod-httapi
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 272
+Depends: libc6 (>= 2.4), libcurl4 (>= 7.16.2), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-httapi-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-httapi_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 151340
+SHA256: 37d99748898f5983c65bb2ec79d6d980f6cdbd22455ac0314775ab8e983190e7
+SHA1: b923d66b240840b768ba519b2b094b9a8d6ec38e
+MD5sum: f8e76ecf1d06cc3e1bd0bb67c87dbf15
+Description: HT-TAPI Hypertext Telephony API for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_httapi for FreeSWITCH.
+ .
+ This module provides an API for controlling the switch by responding
+ to HTTP requests.
+
+Package: freeswitch-mod-httapi-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 654
+Depends: freeswitch-mod-httapi (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-httapi-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 278612
+SHA256: 88270603580bad34b376dc7b3e17ffe4a1499e1ab459b81f16c3a446e8a0176b
+SHA1: 89ec2c6526560f9dc3da01121547052488644f65
+MD5sum: 0e9ae3754b7cf335fa73be8a73f66427
+Description: HT-TAPI Hypertext Telephony API for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_httapi for
+ FreeSWITCH.
+ .
+ This module provides an API for controlling the switch by responding
+ to HTTP requests.
+
+Package: freeswitch-mod-ilbc
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libilbc1
+Suggests: freeswitch-mod-ilbc-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: non-free/comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-ilbc_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128960
+SHA256: bc4278f19fe45992f5bbb1c9221fe23a67be0324b7b1b020dc6012af255f83ef
+SHA1: 74539ac48f20ecea2427e51dcf0bd901ff8363bc
+MD5sum: 85b3b595b51a7cbd5f2c9be809161f60
+Description: mod_ilbc for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_ilbc for FreeSWITCH.
+ .
+ Adds mod_ilbc.
+
+Package: freeswitch-mod-imagick
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libmagickcore-6.q16-6 (>= 8:6.9.10.2)
+Suggests: freeswitch-mod-imagick-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-imagick_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132140
+SHA256: b689b9b9b9e26b359422d0f63896dce1b92ce3ace581e6b9266905bae8dca0e3
+SHA1: 848c9d697f3638443f474338f3f955f10785f8bb
+MD5sum: 908281369f3fa9e46bb1d059c1edf9b6
+Description: Adds image formats support for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_imagick for FreeSWITCH.
+ .
+ Adds image formats support via mod_imagick.
+
+Package: freeswitch-mod-imagick-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 507
+Depends: freeswitch-mod-imagick (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-imagick-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 234572
+SHA256: ace5327061ba7572eea0eb3381f95233da365acafe97a52e0b6d306d90bbce9f
+SHA1: eac522f8815ffc61245c9c16944fb03b4841cbf7
+MD5sum: 6c1aaf5e8acd9ec091d403bb5d9abcfb
+Description: Adds image formats support for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_imagick for
+ FreeSWITCH.
+ .
+ Adds image formats support via mod_imagick.
+
+Package: freeswitch-mod-isac
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 426
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-isac-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-isac_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 246704
+SHA256: 6d2b38cc8520cfa08e1929326c1d5facbf0cead8e51f08420fef5981f2b9bfe5
+SHA1: 3797da8592e4d4ce7583c07b8cad3fd46ba5d64c
+MD5sum: a3f0223262c536784484adbe143ee933
+Description: mod_isac for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_isac for FreeSWITCH.
+ .
+ Adds mod_isac.
+
+Package: freeswitch-mod-isac-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 943
+Depends: freeswitch-mod-isac (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-isac-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 381028
+SHA256: 7761336281a8b046065e0aeefdc1d11c9668b61c55910555a18643c90297fce8
+SHA1: 95b9bb83c7a7b32ef053346588f53052e7192bde
+MD5sum: 37a3b525a81a711f40093d23353b74b9
+Description: mod_isac for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_isac for FreeSWITCH.
+ .
+ Adds mod_isac.
+
+Package: freeswitch-mod-json-cdr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 231
+Depends: libc6 (>= 2.4), libcurl4 (>= 7.16.2), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-json-cdr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-json-cdr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 136536
+SHA256: a58d69323243d77b4f5ce3f9ed19686b130f5d0e99e426baa5e3e49d85df1282
+SHA1: 7698eba56caed9f40bca59ca4971ed949c3d160c
+MD5sum: cbd4f09dfa88c8621e8be248665226d5
+Description: mod_json_cdr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_json_cdr for FreeSWITCH.
+ .
+ Adds mod_json_cdr.
+
+Package: freeswitch-mod-json-cdr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 529
+Depends: freeswitch-mod-json-cdr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-json-cdr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 238672
+SHA256: 04e6e0e153297bac5712e3295f90d14d75336e4ef38349cc2ec6ccefdecbb1bb
+SHA1: 01125ccf80f0269799e205b28923fb68bb6d29be
+MD5sum: 04b0f6cc91ea066b8e1c8ae9aed0a7b6
+Description: mod_json_cdr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_json_cdr for
+ FreeSWITCH.
+ .
+ Adds mod_json_cdr.
+
+Package: freeswitch-mod-local-stream
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 243
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-local-stream-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-local-stream_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 139404
+SHA256: 9ec05800e9c7b6497b8c8a4a54d04b1d22a1b0f8289eb1c8f32c57ebd02da7e0
+SHA1: 8ccf444cb7dcce34eace8ba46275bda05568c0a1
+MD5sum: 3c7b871cb735aad2493fb7dba22f1463
+Description: mod_local_stream for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_local_stream for FreeSWITCH.
+ .
+ Adds mod_local_stream.
+
+Package: freeswitch-mod-local-stream-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 498
+Depends: freeswitch-mod-local-stream (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-local-stream-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 231204
+SHA256: 2185cee6e014ebdd249e3027c5e52f725ae579a09bca6df1a18dc77cb0a51e37
+SHA1: dd5a46168ec573589bc67082695854f51c31a8b0
+MD5sum: 8815624518c3b8114c3b52819cfa7890
+Description: mod_local_stream for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_local_stream for
+ FreeSWITCH.
+ .
+ Adds mod_local_stream.
+
+Package: freeswitch-mod-logfile
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-logfile-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-logfile_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132212
+SHA256: b689c26f0d5e8011b693bcb21b3b6670b348e78f62550d09595cd06e032f4308
+SHA1: 6856c254f4ffebf5e6cef4d9c009855202011bb5
+MD5sum: ce2d0a1503176b348da8ec28c8a327d3
+Description: mod_logfile for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_logfile for FreeSWITCH.
+ .
+ Adds mod_logfile.
+
+Package: freeswitch-mod-logfile-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 465
+Depends: freeswitch-mod-logfile (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-logfile-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218608
+SHA256: 1a292a4ec5f402c7388e09d2e528eb54028c5b17de7058b320d4cb8747c1da94
+SHA1: e9ced69d2efb0eb8e5c86b38c46dc13861302792
+MD5sum: 15146df8fcc7574725c5593eeae9c548
+Description: mod_logfile for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_logfile for
+ FreeSWITCH.
+ .
+ Adds mod_logfile.
+
+Package: freeswitch-mod-loopback
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 248
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-loopback-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-loopback_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 142288
+SHA256: 7a76270d0a34d506421ced423c6fc83ca67513ab63ca172a4389d08ee1851fba
+SHA1: 757765f35f6c4c8201c2ddc739d121c80a0b57ca
+MD5sum: 8c89e7139177e0946d36d253c97727eb
+Description: mod_loopback for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_loopback for FreeSWITCH.
+ .
+ Adds mod_loopback.
+
+Package: freeswitch-mod-loopback-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 531
+Depends: freeswitch-mod-loopback (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-loopback-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 240884
+SHA256: e8ed3c0c01e4452a160b183877ddd2d784b19b008af0e29151f2274fdcd83b3d
+SHA1: ee2e0da0797d6064546bd511403b8cc476f7fe2e
+MD5sum: f38bc18a7d1ad205aa5cd342748d2aa0
+Description: mod_loopback for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_loopback for
+ FreeSWITCH.
+ .
+ Adds mod_loopback.
+
+Package: freeswitch-mod-lua
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 439
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libgcc-s1 (>= 3.0), liblua5.3-0, libstdc++6 (>= 5.2)
+Suggests: freeswitch-mod-lua-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-lua_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 187572
+SHA256: 96747f909c47574ddc17598df16f74696d77401f42526803adf1d401ff7bcfa1
+SHA1: b028464a32290544887c6371bef7779176ef148f
+MD5sum: 773cbc4d5e95efe277f65d8ebdae2d8b
+Description: mod_lua for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_lua for FreeSWITCH.
+ .
+ Adds mod_lua.
+
+Package: freeswitch-mod-lua-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1193
+Depends: freeswitch-mod-lua (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-lua-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 418336
+SHA256: ee885ae6f72ee0260458d7005852db60c288bd5bd7a237ac241729ce193df9f1
+SHA1: 5ef8f18754a82fdd49aed3dcd6c432a14e0e679b
+MD5sum: fc71fd65ff8633ce5d38ef26f2122921
+Description: mod_lua for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_lua for FreeSWITCH.
+ .
+ Adds mod_lua.
+
+Package: freeswitch-mod-memcache
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libmemcached11 (>= 1.1.4)
+Suggests: freeswitch-mod-memcache-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-memcache_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132256
+SHA256: 786914ba2ccfeac7a7359e95d7f7bd72b3ddacb955cbf524089335576ab7c45b
+SHA1: de192831a7a1c2d918d63a38431c72c456b5d2ff
+MD5sum: f6f7b3c445f6003aa7e1b83dcb80376c
+Description: Memcache for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_memcache for FreeSWITCH.
+ .
+ This module provides an interface to memcache servers.
+
+Package: freeswitch-mod-memcache-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 483
+Depends: freeswitch-mod-memcache (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-memcache-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 226212
+SHA256: d1247b99d5951dc4304a951056a05db367781184367603d5527562ea1f81f165
+SHA1: b06c76d0aed7f98996bbdb35bae19d0aff04d103
+MD5sum: f3dfce7d438bca90ae57d5d460b66699
+Description: Memcache for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_memcache for
+ FreeSWITCH.
+ .
+ This module provides an interface to memcache servers.
+
+Package: freeswitch-mod-mp4v
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-mp4v-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-mp4v_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128300
+SHA256: 56b1e8f01597c4a2a30821f6fecde5a90340a5935d2cc297898a657c41283613
+SHA1: f111b43936b9008d2488f4188004113cd2991f34
+MD5sum: e33658583a5cc51865d26826fc6296b3
+Description: mod_mp4v for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_mp4v for FreeSWITCH.
+ .
+ Adds mod_mp4v.
+
+Package: freeswitch-mod-mp4v-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 448
+Depends: freeswitch-mod-mp4v (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-mp4v-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 211532
+SHA256: e6348120eb092256f126db21d860e1dabe47c42fcdc9d47734a05232bcb3ad36
+SHA1: 3d151f6ef47e4b5672ce6c977c0b0d7a64273800
+MD5sum: f1f447c5b6a626ffc9699a6fd620849b
+Description: mod_mp4v for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_mp4v for FreeSWITCH.
+ .
+ Adds mod_mp4v.
+
+Package: freeswitch-mod-native-file
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-native-file-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-native-file_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129160
+SHA256: 85993d275d5e81250ef2913df4706fc847c202fb0ea258422d9d1e6e5085c193
+SHA1: 5afe4905b81d6ce2a2625d6f1ec8688817d8aa33
+MD5sum: b94ea9d9d54ebb57268d1a085f3ac044
+Description: mod_native_file for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_native_file for FreeSWITCH.
+ .
+ Adds mod_native_file.
+
+Package: freeswitch-mod-native-file-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 450
+Depends: freeswitch-mod-native-file (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-native-file-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 212280
+SHA256: 99f3da8eb5754fe44b6a7d472ebef23a02bfa04f71ce5e3358d1fe0177f2ded6
+SHA1: 47d8f75380c734e78978bbd5052ac2d9770e20b3
+MD5sum: b6c2b281ed2da4dbb49208d376c1c3eb
+Description: mod_native_file for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_native_file for
+ FreeSWITCH.
+ .
+ Adds mod_native_file.
+
+Package: freeswitch-mod-opus
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 243
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libopus0 (>= 1.1)
+Suggests: freeswitch-mod-opus-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-opus_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 141716
+SHA256: 743656620fd8e0f587a7f213a5ce12a28a12c387e1237633000b5f1add037d4d
+SHA1: ad6801bbad1c82af42831af081fc0b85f0234c51
+MD5sum: 70c173717bd029883f5c2d10c943fa49
+Description: mod_opus for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_opus for FreeSWITCH.
+ .
+ Adds mod_opus.
+
+Package: freeswitch-mod-opus-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 528
+Depends: freeswitch-mod-opus (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-opus-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 240520
+SHA256: 8fb5896c9883099893941e759a0283a265e12c355e97fb9ccc6a320516f4111f
+SHA1: 3b52ac8ce193c0e4460e8f3686f4bf2b7d6cbfad
+MD5sum: 8426619a2828211dceb94cb4149b56da
+Description: mod_opus for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_opus for FreeSWITCH.
+ .
+ Adds mod_opus.
+
+Package: freeswitch-mod-pgsql
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 231
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libpq5
+Suggests: freeswitch-mod-pgsql-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-pgsql_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 134592
+SHA256: bd2d763f6b293eae63ae3037c80cf609d57c07609fb7d4b1a852605d7306e313
+SHA1: 6e58e4c668681a70e79dadf36e826b0996ee1f0b
+MD5sum: f73709445e6f686d620af24bd81a1339
+Description: Adds mod_pgsql for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_pgsql for FreeSWITCH.
+ .
+ Adds mod_pgsql.
+
+Package: freeswitch-mod-pgsql-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 488
+Depends: freeswitch-mod-pgsql (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-pgsql-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 228364
+SHA256: 7081f3b500e14181375a5cec68d8c0dab7745b6d68d25bd3b46ac69bf240f578
+SHA1: c13e7c4f510b0f78555d27446a349693c6ced12c
+MD5sum: 24b93115d09108eebab7a2b2959fdd44
+Description: Adds mod_pgsql for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_pgsql for FreeSWITCH.
+ .
+ Adds mod_pgsql.
+
+Package: freeswitch-mod-png
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-png-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-png_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131332
+SHA256: 345595adddb7d7ad2c426b612c7a247a79e54ed014e5b13b7aaf8663bed5c5ac
+SHA1: 0302c842f8318c96a32fd73182ffcb1f54f6f52f
+MD5sum: eb4c551246dd15f0cc20909099a515e7
+Description: Adds mod_png for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_png for FreeSWITCH.
+ .
+ Adds mod_png.
+
+Package: freeswitch-mod-png-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 465
+Depends: freeswitch-mod-png (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-png-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218524
+SHA256: 7c493a86fecf5752834f6ca86ecc33083cc8d8077e30693ff52e4312b5b2b6ea
+SHA1: 8e954aa8a45671131904eaf6a7b6f120121c5301
+MD5sum: 21dcb9c267baba202e1aac887b06b99e
+Description: Adds mod_png for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_png for FreeSWITCH.
+ .
+ Adds mod_png.
+
+Package: freeswitch-mod-rtc
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-rtc-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-rtc_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 130888
+SHA256: 0919526080bde090c00d75dfc6b4379c39c81b844d1ff384eee3c0dbc5f25200
+SHA1: 388168e5e3ca811e0f25228912e981d77481ff81
+MD5sum: d9e4976ae3c31843b8aa7235b353ad1f
+Description: Adds mod_rtc. for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_rtc for FreeSWITCH.
+ .
+ Adds mod_rtc.
+
+Package: freeswitch-mod-rtc-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 469
+Depends: freeswitch-mod-rtc (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-rtc-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 219148
+SHA256: 368ada86176aeda2dd248334f2dae03181f02a9c789732272abfb457a41db1e4
+SHA1: 1572f67eba261b3ffceff886ecacfe8d67bd17d0
+MD5sum: 3b9002837b54e97492253ca7d52b4749
+Description: Adds mod_rtc. for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_rtc for FreeSWITCH.
+ .
+ Adds mod_rtc.
+
+Package: freeswitch-mod-say-de
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-de-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-de_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131840
+SHA256: ba0431fb12736ea34d795ee7905b352ef3502dd17a188f24a18001ddb4f81956
+SHA1: 7a7c2fee9f1af8f3d96c8e5fca09ffe938ddfc4d
+MD5sum: b787d0014f3422ba7b97c4ac9ee7cc0f
+Description: mod_say_de for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_de for FreeSWITCH.
+ .
+ Adds mod_say_de.
+
+Package: freeswitch-mod-say-de-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 469
+Depends: freeswitch-mod-say-de (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-de-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218348
+SHA256: efaf3d7cbaa6b113e94c43f7a2c4e9c2ef5d46dfc678049e2e615dcce390c954
+SHA1: 6580c0bbfa8aa60ab90ce4019c07947629a9a507
+MD5sum: 310cfa0371fc1c1d5d0335a7d8e7f0f6
+Description: mod_say_de for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_de for
+ FreeSWITCH.
+ .
+ Adds mod_say_de.
+
+Package: freeswitch-mod-say-en
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-en-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-en_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132708
+SHA256: 9cc4d3ab00624f70adf6f7e077331b7b924c07d95225758f413daf6113391266
+SHA1: 4808a96f53f03bfb9b2afed3a00491444678696e
+MD5sum: abcae299baa1e7880d564b10c3beb3ea
+Description: mod_say_en for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_en for FreeSWITCH.
+ .
+ Adds mod_say_en.
+
+Package: freeswitch-mod-say-en-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 474
+Depends: freeswitch-mod-say-en (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-en-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 220852
+SHA256: 4b84f5cfac3a11297eff634b87a37006dfae31ef357d8abe37dc1d380e1854d0
+SHA1: eb96b5f1b2b032ccb67a6144330dcabbeb1e4dd4
+MD5sum: a51d78421d7b3312d711b9b87c1b5c64
+Description: mod_say_en for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_en for
+ FreeSWITCH.
+ .
+ Adds mod_say_en.
+
+Package: freeswitch-mod-say-es
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-es-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-es_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131676
+SHA256: 7f4fb8d9b176295e43179ec750fee86adcf4dd6fd7d42c3f0071a620c185f13b
+SHA1: fe9775f6c6ff161102a7303168b7491aa62aa9ce
+MD5sum: 234707b3e8dc99f66b0305ffc29764b5
+Description: mod_say_es for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_es for FreeSWITCH.
+ .
+ Adds mod_say_es.
+
+Package: freeswitch-mod-say-es-ar
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-es-ar-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-es-ar_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132500
+SHA256: 976d026cc921522a6e5d1fdc181013309e4578996b5b47cc7bebb779f313bf97
+SHA1: a3455322f18e696041ec05fa2e7211b5e144f67a
+MD5sum: 22bc0fb6a6e2ad3161f07e599ec6fa3a
+Description: mod_say_es_ar for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_es_ar for FreeSWITCH.
+ .
+ Adds mod_say_es_ar.
+
+Package: freeswitch-mod-say-es-ar-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 471
+Depends: freeswitch-mod-say-es-ar (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-es-ar-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 220072
+SHA256: 1b06645768e2a1c6ea5004b6735256686f73f3f75f3d62f48e088bc2f5ba5847
+SHA1: 919db56c2f1d9a360144cf8630799359bdb87abb
+MD5sum: a3c407b0bf0a310ebe665e4a678c9816
+Description: mod_say_es_ar for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_es_ar for
+ FreeSWITCH.
+ .
+ Adds mod_say_es_ar.
+
+Package: freeswitch-mod-say-es-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 466
+Depends: freeswitch-mod-say-es (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-es-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218068
+SHA256: 718f19885ac831fefb5e288f88aaa562cb80d463151aa7df106cb0050583d7a1
+SHA1: 72c6ef647e130c2ffdca7f8aefff2ee3a22e3d8a
+MD5sum: cd0c8a5e317bdac10c775a536359864c
+Description: mod_say_es for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_es for
+ FreeSWITCH.
+ .
+ Adds mod_say_es.
+
+Package: freeswitch-mod-say-fa
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-fa-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-fa_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132872
+SHA256: 87b0e06d496c7ac82900fc3bde95da1909bdb341c69ed5659f45c397cfa2adb7
+SHA1: 6ebb44ca83cf7599d64c8cd2b9ec9d605ae23f86
+MD5sum: b7168030917de49aa2f634ae74eaa3cd
+Description: mod_say_fa for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_fa for FreeSWITCH.
+ .
+ Adds mod_say_fa.
+
+Package: freeswitch-mod-say-fa-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 471
+Depends: freeswitch-mod-say-fa (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-fa-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 220324
+SHA256: 65f9710c74f990212178c3d978d740d9cae5952067d230c763e80c456360638f
+SHA1: a2095c9b30ced244255b5f6c3a0929828a4d2727
+MD5sum: 0d093ab73e4a3ac8c37269e8e267b48b
+Description: mod_say_fa for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_fa for
+ FreeSWITCH.
+ .
+ Adds mod_say_fa.
+
+Package: freeswitch-mod-say-fr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-fr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-fr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131684
+SHA256: fa43c6bab330c88d9761e650807919236c24f98a1120957e4556bd58f50cefd6
+SHA1: 34458543d8fa84d8f2f81e909782b39868ccc431
+MD5sum: 7d2f28b5ad29565112b3e94d730c3825
+Description: mod_say_fr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_fr for FreeSWITCH.
+ .
+ Adds mod_say_fr.
+
+Package: freeswitch-mod-say-fr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 467
+Depends: freeswitch-mod-say-fr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-fr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218220
+SHA256: 283b458455c075c24f2025329e02e77c14a028058a33bd97d22a61cf6ca76b19
+SHA1: 33fde51d093e6f13fe513df26487ebe04a48e545
+MD5sum: 0341e61c1703fc3c3e12088fef07d75a
+Description: mod_say_fr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_fr for
+ FreeSWITCH.
+ .
+ Adds mod_say_fr.
+
+Package: freeswitch-mod-say-he
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-he-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-he_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 133260
+SHA256: 528c3380537f82ed85a9d029ba79bb44ec867fada10f0b815668e2bf6cb1a7c9
+SHA1: 080c55b80ff53dda12f42b76b887ca888c7e2eb9
+MD5sum: 07b0272c9acbdda116925bf2a6b9907a
+Description: mod_say_he for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_he for FreeSWITCH.
+ .
+ Adds mod_say_he.
+
+Package: freeswitch-mod-say-he-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 472
+Depends: freeswitch-mod-say-he (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-he-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 220216
+SHA256: dc32b51d178d8a6adeff243f770f9928defc92fd5989bf20c6fb1f4f53541401
+SHA1: 43f491551e31360e1d566017b46001270e0c4d20
+MD5sum: 17205734f634a8de52a7cbdf5b4e5270
+Description: mod_say_he for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_he for
+ FreeSWITCH.
+ .
+ Adds mod_say_he.
+
+Package: freeswitch-mod-say-hr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 235
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-hr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-hr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 136992
+SHA256: 1e19a4ab11009334099296bf7421ec2447d139b082106337ba136b2f947128ad
+SHA1: 6ec098149605298ac87ce75d87e93624773c1282
+MD5sum: f37619f5d8c49d9bc58e766a06654311
+Description: mod_say_hr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_hr for FreeSWITCH.
+ .
+ Adds mod_say_hr.
+
+Package: freeswitch-mod-say-hr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 497
+Depends: freeswitch-mod-say-hr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-hr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 226828
+SHA256: 3b4ec20f43ad2f9b896bc75ea06c270ff206ded65e71bc6d08b3e2a63803f08f
+SHA1: a9df278346573f7e86638f89061172af4d74bcb4
+MD5sum: 2fb6dc7f7bcdba2a725f2c8d5c71121d
+Description: mod_say_hr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_hr for
+ FreeSWITCH.
+ .
+ Adds mod_say_hr.
+
+Package: freeswitch-mod-say-hu
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-hu-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-hu_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131176
+SHA256: c3783588c2df00b452178203229f6d397dddf3e449cad154cb0404cc793aabdb
+SHA1: cf093e18cf9c9d31b520665c6c29cbbccd37d523
+MD5sum: 4cd129f1cc8a878cd5cbe6aa2c3043c7
+Description: mod_say_hu for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_hu for FreeSWITCH.
+ .
+ Adds mod_say_hu.
+
+Package: freeswitch-mod-say-hu-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 463
+Depends: freeswitch-mod-say-hu (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-hu-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 217400
+SHA256: 11846f116d98400172480d510761b327509b1b282eb79df3236795b818bb9c49
+SHA1: 658883f14d3f57b743d6b6612084078e3ebe692b
+MD5sum: 800b65c4cafa4114377d209ac21c9dc6
+Description: mod_say_hu for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_hu for
+ FreeSWITCH.
+ .
+ Adds mod_say_hu.
+
+Package: freeswitch-mod-say-it
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-it-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-it_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131576
+SHA256: d72acd63a43a9ea05783aaaddd0c45b59b78d382cfe0afee60f7ff9cc18a66fb
+SHA1: 998f9592a2f57e0fedd0463573c598d80f7ecbfc
+MD5sum: dc7fe16ec8b340f88289ff6a33cd9fc6
+Description: mod_say_it for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_it for FreeSWITCH.
+ .
+ Adds mod_say_it.
+
+Package: freeswitch-mod-say-it-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 466
+Depends: freeswitch-mod-say-it (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-it-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 217724
+SHA256: 2170c16183da54fbaf04d2a6aa8f163a435d9870714fcb2f078bb299d3e7bfe0
+SHA1: 17f229a5a561b0233d40016a0b3af3ff34163783
+MD5sum: 0e5ed0552b40100fbd830a0e32cf9704
+Description: mod_say_it for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_it for
+ FreeSWITCH.
+ .
+ Adds mod_say_it.
+
+Package: freeswitch-mod-say-ja
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-ja-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-ja_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131724
+SHA256: f9e401b6f73cc3a412912a828be1e47a44c345eaf570c39a1a2499d4f04d7bb5
+SHA1: 126c80ac79ad618afcafb431e98a390bb98f6094
+MD5sum: 8df04bd92b78edf1cb66d59d8dca8570
+Description: mod_say_ja for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_ja for FreeSWITCH.
+ .
+ Adds mod_say_ja.
+
+Package: freeswitch-mod-say-ja-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 468
+Depends: freeswitch-mod-say-ja (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-ja-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218020
+SHA256: 31e373976cd6db479a046271514353e2314dc69b4f425763ee21a19f1fa3a434
+SHA1: 4a8b5fb75ed2a3db7ee68e402ec586210486dd08
+MD5sum: d2a571fb1dcc4c3f1cfde8e59f06faeb
+Description: mod_say_ja for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_ja for
+ FreeSWITCH.
+ .
+ Adds mod_say_ja.
+
+Package: freeswitch-mod-say-nl
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-nl-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-nl_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131008
+SHA256: 5897e88648f8f652ea7c6c5635f67f21d6893c5f5402a8cb99ce77afe4b95114
+SHA1: c2cb706436daf661acb0e0ef12be23b73ba66673
+MD5sum: b5e1d632cdfa9629788dd1f1a1e59770
+Description: mod_say_nl for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_nl for FreeSWITCH.
+ .
+ Adds mod_say_nl.
+
+Package: freeswitch-mod-say-nl-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 461
+Depends: freeswitch-mod-say-nl (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-nl-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 216148
+SHA256: ef5b4c8e203f6c3fe3456fbf472d6639040c878dabb4b3e9624686822407e182
+SHA1: d37ea1105d8fccc241ebf46e30d1ce47c357032e
+MD5sum: 7b1880bcc5bd3098b594b768dd128e42
+Description: mod_say_nl for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_nl for
+ FreeSWITCH.
+ .
+ Adds mod_say_nl.
+
+Package: freeswitch-mod-say-pl
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-pl-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-pl_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132740
+SHA256: ddc96705ce542e68e9fe1300b1daa7594c7601994de409b4d5dfc88ddaa26511
+SHA1: f2ebcb7837e8968465c41d07c88b78006d858116
+MD5sum: 6dedee89c272d8508b54be450e91cc05
+Description: mod_say_pl for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_pl for FreeSWITCH.
+ .
+ Adds mod_say_pl.
+
+Package: freeswitch-mod-say-pl-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 471
+Depends: freeswitch-mod-say-pl (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-pl-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 219912
+SHA256: b886da9799012bf11e03ccbfac2a7305557e3e69410cc3b9dad64cce639756d7
+SHA1: 64bacdea9a5e2f101e28190c07b1fb2bbbded79d
+MD5sum: efc3345c185a777e70d63ca6fec2b9d1
+Description: mod_say_pl for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_pl for
+ FreeSWITCH.
+ .
+ Adds mod_say_pl.
+
+Package: freeswitch-mod-say-pt
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-pt-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-pt_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131772
+SHA256: 81b31b88723f12f4c1e9327cae41f6e5b09f57cd710956a9fbebf2d15f7119a1
+SHA1: 1d0e415b69eef85ea5f29ad7ffb9b8f332b51dc1
+MD5sum: 5b5aabe9904e99bbc98d9ee7562bd5ab
+Description: mod_say_pt for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_pt for FreeSWITCH.
+ .
+ Adds mod_say_pt.
+
+Package: freeswitch-mod-say-pt-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 468
+Depends: freeswitch-mod-say-pt (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-pt-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218592
+SHA256: b4dd3aecb628f561024a27f4c2d0376924fa2fcf60febc50423e7f97dd13f59e
+SHA1: c3e3a50cdbfa8fd4f4e96ea29872f80a4ae621a8
+MD5sum: dff826888b0fa41f0006eaf98ca0934e
+Description: mod_say_pt for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_pt for
+ FreeSWITCH.
+ .
+ Adds mod_say_pt.
+
+Package: freeswitch-mod-say-ru
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 287
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-ru-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-ru_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 136108
+SHA256: ba955a0f8ef9a292ecfd036699f1356702de8d1ac92792cb45abebe734b4351e
+SHA1: 347df16eeb094e5d72d3d8fd2387c8f445004729
+MD5sum: c91a4606b4b525bda681b00936453020
+Description: mod_say_ru for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_ru for FreeSWITCH.
+ .
+ Adds mod_say_ru.
+
+Package: freeswitch-mod-say-ru-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 480
+Depends: freeswitch-mod-say-ru (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-ru-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 221352
+SHA256: 31989869d7b190acd86ab6b507333139220135c8a7f885b5bdd55e13204b2ffc
+SHA1: 920ea8739f6c43d05f955b4949bc11a68f260acf
+MD5sum: e3ec25b464b5b5a1b9ee0c618d1daf31
+Description: mod_say_ru for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_ru for
+ FreeSWITCH.
+ .
+ Adds mod_say_ru.
+
+Package: freeswitch-mod-say-th
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-th-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-th_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131696
+SHA256: 787c0e0790660213b2c78fab843a55f236a60f908574efdcba64b1052bce1f21
+SHA1: d121d8ef8dc05a8331680441094b4edeb95909d3
+MD5sum: ea75c26efe947ac34c48ba3113aa4fdf
+Description: mod_say_th for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_th for FreeSWITCH.
+ .
+ Adds mod_say_th.
+
+Package: freeswitch-mod-say-th-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 468
+Depends: freeswitch-mod-say-th (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-th-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 217440
+SHA256: eaede77f676ee0f0a9a976db69a3362c697b21ac8ca802d1176eaed9192afa7a
+SHA1: e7e5fbfab4299c486f58a56cef8cf8ca0c6b0df9
+MD5sum: 8fb39b7ed852b3f24602b3821a11319a
+Description: mod_say_th for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_th for
+ FreeSWITCH.
+ .
+ Adds mod_say_th.
+
+Package: freeswitch-mod-say-zh
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-say-zh-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-zh_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132032
+SHA256: 70537b49350633a10ba6dbd3e5a9b7118a896c01f66370d3e900079ef5677992
+SHA1: 51739e949266c3092ceb52ac1d634ed1b8fb468d
+MD5sum: aa825cd07f527f9c9c8a5f97480c087d
+Description: mod_say_zh for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_say_zh for FreeSWITCH.
+ .
+ Adds mod_say_zh.
+
+Package: freeswitch-mod-say-zh-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 470
+Depends: freeswitch-mod-say-zh (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-say-zh-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 219000
+SHA256: fdaba448e6fc0fed59c900380d2c832dfd1d09b9325ce30ecc91efad9981e590
+SHA1: 2654498ce6849ae4550270d0542d7f8069abb7a3
+MD5sum: 992fe9454b722c2df6d1983e69291665
+Description: mod_say_zh for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_say_zh for
+ FreeSWITCH.
+ .
+ Adds mod_say_zh.
+
+Package: freeswitch-mod-shout
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 244
+Depends: libc6 (>= 2.4), libcurl4 (>= 7.16.2), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libmp3lame0 (>= 3.100), libmpg123-0 (>= 1.28.0), libshout3 (>= 2.4.3)
+Suggests: freeswitch-mod-shout-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-shout_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 140192
+SHA256: a0796303c1dde80f9ba26fc164451a8b6f746065b9e70f795ee480ee0a73989d
+SHA1: b82ac1377ec868c26130765ae7cae390f0170891
+MD5sum: cddea98a7d7f003a630c757d6db9fcbe
+Description: mod_shout for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_shout for FreeSWITCH.
+ .
+ Adds mod_shout.
+
+Package: freeswitch-mod-shout-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 560
+Depends: freeswitch-mod-shout (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-shout-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 253472
+SHA256: b0e3c8240aca96c8a31a117a9c794941d3345d28ee44c2a4219503ae36692821
+SHA1: 80c343df16a8e81e6a6c6bb351e5ce814d1a14c8
+MD5sum: 24375da788b66c5fce16074ab57395fd
+Description: mod_shout for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_shout for FreeSWITCH.
+ .
+ Adds mod_shout.
+
+Package: freeswitch-mod-silk
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 219
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libsilk1
+Suggests: freeswitch-mod-silk-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-silk_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 131340
+SHA256: 6576788143fcf6b45ce26c591cddd921ec0d10741abf76bea9744bbcac5b6ade
+SHA1: 18feeaf1466c4d42070274f47a863032766662e1
+MD5sum: 68ec4d0c7a89c1fc262f74cf5e2e0de2
+Description: mod_silk for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_silk for FreeSWITCH.
+ .
+ Adds mod_silk.
+
+Package: freeswitch-mod-silk-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 465
+Depends: freeswitch-mod-silk (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-silk-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 218420
+SHA256: 119c21518657c0cf51dd4569f4c87c506572f85fd2bb4ea058b32e5288d54a4c
+SHA1: 7208f4d20afff89584ce97b14e4e525f89ef47ba
+MD5sum: aa67945b7ed07dc8a0af91b9b1bc3466
+Description: mod_silk for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_silk for FreeSWITCH.
+ .
+ Adds mod_silk.
+
+Package: freeswitch-mod-sms
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 227
+Depends: libc6 (>= 2.2.5), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-sms-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-sms_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 134680
+SHA256: 9f9c49351572664f69486fdeee3abf7045c4c637d509f74afd734b5bee6e652d
+SHA1: de152644a09ce84e936570d36502efbe0dc09e57
+MD5sum: 27129d2194554fc4ee51c3349b47d656
+Description: Astract SMS for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_sms for FreeSWITCH.
+ .
+ This module provides an abstract facility for interfacing with SMS
+ systems.
+
+Package: freeswitch-mod-sms-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 476
+Depends: freeswitch-mod-sms (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-sms-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 222484
+SHA256: 8d2ba6165bf7c4c42a958343a35a433f3fec02b1c1b8b1f81d9f0476efe2409c
+SHA1: 6f8a6741ba913085acb910bbcf626b22820ee066
+MD5sum: d77bd2cb48c977eb2ef216971a66933a
+Description: Astract SMS for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_sms for FreeSWITCH.
+ .
+ This module provides an abstract facility for interfacing with SMS
+ systems.
+
+Package: freeswitch-mod-sndfile
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 223
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libsndfile1 (>= 1.0.20)
+Suggests: freeswitch-mod-sndfile-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-sndfile_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 132944
+SHA256: 925146f5a315526e453e0988ba4c6176b8129e634325a69f17408ad3831c8894
+SHA1: 7278599d0e7c701c788c9ff05c7631b3466b2aa2
+MD5sum: 7ab75cdfe7c6eb580dd9d7898e423fe5
+Description: mod_sndfile for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_sndfile for FreeSWITCH.
+ .
+ Adds mod_sndfile.
+
+Package: freeswitch-mod-sndfile-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 473
+Depends: freeswitch-mod-sndfile (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-sndfile-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 221372
+SHA256: 4d99ed70e1fd9db369e209ad7b3d536f5b028d6b08dec1a849609b4fb6a89ae1
+SHA1: effe9bf29cc650826c4b2f863fbb3dde388dd70f
+MD5sum: 7a6abc38e7dc482d4de85d33018bf77b
+Description: mod_sndfile for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_sndfile for
+ FreeSWITCH.
+ .
+ Adds mod_sndfile.
+
+Package: freeswitch-mod-sofia
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 884
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libsofia-sip-ua0, libssl3 (>= 3.0.0)
+Suggests: freeswitch-mod-sofia-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-sofia_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 382420
+SHA256: 2bab11c6a32c078ef5277187e3b57da6f0dc5eeb57c698972920089c0b8ab3ec
+SHA1: 95f19d72e87a20ae19a8b6d51ba8b64fbde2dcfc
+MD5sum: 94a2fae08fee68116c317c428b88ecf5
+Description: mod_sofia for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_sofia for FreeSWITCH.
+ .
+ Adds mod_sofia.
+
+Package: freeswitch-mod-sofia-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 2920
+Depends: freeswitch-mod-sofia (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-sofia-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 977396
+SHA256: 1b94551238dadd43478baf829c4446bd7bc9e94ac91640703fa68988b05f63be
+SHA1: 51d56a08fae3492ec0a1588571414377022ffe37
+MD5sum: 4f6cf5943baa6f7ea80822c0af786648
+Description: mod_sofia for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_sofia for FreeSWITCH.
+ .
+ Adds mod_sofia.
+
+Package: freeswitch-mod-spandsp
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 333
+Depends: libc6 (>= 2.14), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libspandsp3
+Suggests: freeswitch-mod-spandsp-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-spandsp_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 172628
+SHA256: ae7ae1fc7f7318784f549c0ee21976c669bf0dfab7876e4a42c879185ae96421
+SHA1: aa137b14fa226f39903e3926c5c36c5785e8f32d
+MD5sum: 65686db6a1d51c1557de752121c73287
+Description: SpanDSP for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_spandsp for FreeSWITCH.
+ .
+ This module implements spandsp fax, dsp, and codec functionality.
+
+Package: freeswitch-mod-spandsp-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 950
+Depends: freeswitch-mod-spandsp (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-spandsp-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 379220
+SHA256: 7da058dc04b686c2f7846e1227998f54e603996ac19430ea44387cea98297588
+SHA1: d397a9f2c4e4ba3825f9fa9d74452ed49359ea64
+MD5sum: e419a3fc7eb7435dc110c7769de00347
+Description: SpanDSP for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_spandsp for
+ FreeSWITCH.
+ .
+ This module implements spandsp fax, dsp, and codec functionality.
+
+Package: freeswitch-mod-theora
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 214
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-theora-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-theora_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128300
+SHA256: 11502baa0bdc811d11abc33a4e9b7667862ecea202b9e0075dc51a7fa871cb61
+SHA1: 987a921d4c2230d72c53b8fd8f7d50b85c9b05ae
+MD5sum: 70c5e77d8965d98febc9edf573397720
+Description: mod_theora for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_theora for FreeSWITCH.
+ .
+ Adds mod_theora.
+
+Package: freeswitch-mod-theora-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 448
+Depends: freeswitch-mod-theora (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-theora-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 211628
+SHA256: 1faba08e348b0d1e3b31704de424f2a5ebfe0d5eb30e40a4d0d5467ef40b12b2
+SHA1: 24031caf3447e3714a02ca845d0312e2b71e5527
+MD5sum: 75244f1b2d92c691aeab98a5cfd246c8
+Description: mod_theora for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_theora for
+ FreeSWITCH.
+ .
+ Adds mod_theora.
+
+Package: freeswitch-mod-tone-stream
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-tone-stream-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-tone-stream_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 129632
+SHA256: c0c0d089e37ff10ba845d10ae796f1254518d1c3684f04b816abf953a33b42fb
+SHA1: 7a2696ce8008459a8e79f18c2158b6bfc34a082f
+MD5sum: 6a68e79736990bfa751a955613d9144b
+Description: mod_tone_stream for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_tone_stream for FreeSWITCH.
+ .
+ Adds mod_tone_stream.
+
+Package: freeswitch-mod-tone-stream-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 454
+Depends: freeswitch-mod-tone-stream (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-tone-stream-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 214296
+SHA256: f1ac0128980ca209b3ec9ef8ee5c9c8fb6159e1895120038f41d5b485aa28092
+SHA1: cd8c29ceb0f08784c49ab1762fcdd5ca41e86efb
+MD5sum: 3563b6f94ae517e4711608317118bcbe
+Description: mod_tone_stream for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_tone_stream for
+ FreeSWITCH.
+ .
+ Adds mod_tone_stream.
+
+Package: freeswitch-mod-tts-commandline
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 215
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-tts-commandline-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-tts-commandline_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 130440
+SHA256: 6b589cac0174235faab8e1b7171614ddbe4c9f86ac1951bd3a6bf3192dbacc23
+SHA1: 8689a5caeee74fd631ed947273383afef795763a
+MD5sum: e67bccd833169dd85743826b88b661fa
+Description: mod_tts_commandline for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_tts_commandline for FreeSWITCH.
+ .
+ Adds mod_tts_commandline.
+
+Package: freeswitch-mod-tts-commandline-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 457
+Depends: freeswitch-mod-tts-commandline (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-tts-commandline-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 215080
+SHA256: 6a87d7825c6be93238dd8ce17fd88cbc7d86377a16a79be44bffe9ad4bc2c123
+SHA1: a76e7d6a23cc0f7986f23eea73b3276945e8aa9a
+MD5sum: c2f6d9c6a3bfa01d14f687b6d670de40
+Description: mod_tts_commandline for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_tts_commandline for
+ FreeSWITCH.
+ .
+ Adds mod_tts_commandline.
+
+Package: freeswitch-mod-valet-parking
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 231
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-valet-parking-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-valet-parking_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 135996
+SHA256: f9cb4a3cc7230c3f67286dbcb442f0238341400dfa68f0285ce879bd38b75f7e
+SHA1: a76c69606c48a9a82f0f7866635702bb5de7961c
+MD5sum: 727d820b5d1b63e10179b0cdd60dc456
+Description: Valet parking for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_valet_parking for FreeSWITCH.
+ .
+ This module implements the valet call parking strategy.
+
+Package: freeswitch-mod-valet-parking-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 485
+Depends: freeswitch-mod-valet-parking (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-valet-parking-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 225304
+SHA256: 63ca586201afef9bdb84f3a5a4ed792dbeff608059da598277d8dec2cf53663e
+SHA1: 2929e6583798dae3759890aaf2743c4e7ae68ebb
+MD5sum: 31af935231442c5d6b94e771b81f4789
+Description: Valet parking for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_valet_parking for
+ FreeSWITCH.
+ .
+ This module implements the valet call parking strategy.
+
+Package: freeswitch-mod-verto
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 337
+Depends: libc6 (>= 2.4), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm), libks2 (>= 2.0.6-10066239391.3bc8dd0524~bookworm), libssl3 (>= 3.0.0)
+Suggests: freeswitch-mod-verto-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-verto_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 177432
+SHA256: bc5c088a6cfa20ed823a00b9a8051e0fe2c962f9b4aa05525f5403416b7a7b6d
+SHA1: a3766bd91291e1a33a29517649635a372aa173bb
+MD5sum: bbe624845204d27e8f93b9edfbf66981
+Description: Adds mod_verto. for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_verto for FreeSWITCH.
+ .
+ Adds mod_verto.
+
+Package: freeswitch-mod-verto-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1451
+Depends: freeswitch-mod-verto (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-verto-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 519832
+SHA256: 962346b82d3e796a2182283318cb69109f2ccfa6cb096ca50d262229204f00b8
+SHA1: 5dfcf44f6db7035a291e4aee174023b95401a2d0
+MD5sum: f5ed3f92b4dfed5bf451f72e04dce07c
+Description: Adds mod_verto. for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_verto for FreeSWITCH.
+ .
+ Adds mod_verto.
+
+Package: freeswitch-mod-xml-cdr
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 227
+Depends: libc6 (>= 2.4), libcurl4 (>= 7.16.2), libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Suggests: freeswitch-mod-xml-cdr-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-mod-xml-cdr_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 135020
+SHA256: 25d761a3b62a8cbffab1c6578c7d0692dafc5b691ad66fa4b1d82285b1226d52
+SHA1: 7b76466419ede6a0a895c805bb238106877ad0cb
+MD5sum: 1178e480817812d11f328491c1371853
+Description: mod_xml_cdr for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains mod_xml_cdr for FreeSWITCH.
+ .
+ Adds mod_xml_cdr.
+
+Package: freeswitch-mod-xml-cdr-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 525
+Depends: freeswitch-mod-xml-cdr (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/freeswitch-mod-xml-cdr-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 236340
+SHA256: 50ce92a77c24646508628e63016ab2afedd4cb3a0e368b611aa0b34928ed82c6
+SHA1: 1a68f70f6e845a964211313faf2a6d4a5fe07555
+MD5sum: aab1ba3ffa1a3d70fad81b065bade626
+Description: mod_xml_cdr for FreeSWITCH (debug)
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for mod_xml_cdr for
+ FreeSWITCH.
+ .
+ Adds mod_xml_cdr.
+
+Package: freeswitch-systemd
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 209
+Depends: systemd
+Conflicts: freeswitch-all (<= 1.6.7), freeswitch-init
+Provides: freeswitch-init
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-systemd_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 128008
+SHA256: 545b1276ec9aa83f43a8d6bb45bf4e06205e21d2768cf253550c78a2562c9d48
+SHA1: 70170ff7b8a7a80481e2e62d4b3742f6212db8b5
+MD5sum: 77f36e45f644e619ed28012722a36847
+Description: FreeSWITCH systemd configuration
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains the systemd configuration for FreeSWITCH.
+
+Package: freeswitch-timezones
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 235
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/freeswitch-timezones_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 130928
+SHA256: b3bcaa11a4cf44e9faf046eb26ccccf805280540ca8bfe4936ee85f08d2a284c
+SHA1: 85977caacbff3c097488bb5c5c0869390d19c66a
+MD5sum: 5a7bdb9ec84535b3f0a2d73f7924df3e
+Description: Timezone files for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package includes the timezone files for FreeSWITCH.
+
+Package: libfreeswitch-dev
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 1336
+Depends: freeswitch
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/f/freeswitch/libfreeswitch-dev_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 326716
+SHA256: 2585e4e40dd7263b425250707c99267de2bd8192ed4e54472692e97b3393b9fd
+SHA1: dd1aaca8548d8a5ccda34d0789aacbb78b1a730e
+MD5sum: ee73b0754a13258f8e768a3718def527
+Description: development libraries and header files for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains include files for FreeSWITCH.
+
+Package: libfreeswitch1
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 4856
+Depends: libc6 (>= 2.34), libcurl4 (>= 7.56.1), libedit2 (>= 2.11-20080614-0), libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.0), libodbc2 (>= 2.3.1), libpcre3, libpng16-16 (>= 1.6.2-1), libsofia-sip-ua0 (>= 1.13.17), libspandsp3, libspeex1 (>= 1.2~), libspeexdsp1 (>= 1.2.1), libsqlite3-0 (>= 3.6.1), libssl3 (>= 3.0.0), libstdc++6 (>= 5), libtpl0, libuuid1 (>= 2.16)
+Suggests: libfreeswitch1-dbg
+Conflicts: freeswitch-all (<= 1.6.7)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: comm
+Filename: pool/main/f/freeswitch/libfreeswitch1_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 1852624
+SHA256: 40218779f22f3a7368b4b6e25ab1548fb33b280d5109ce35198e68ea15d9e684
+SHA1: a8baf59b6a783a123cc2bfc1cdc483c556dc1b65
+MD5sum: 1b93b208d36e021aabbc76b74bb0dfb5
+Description: Cross-Platform Scalable Multi-Protocol Soft Switch
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains the FreeSWITCH core library.
+
+Package: libfreeswitch1-dbg
+Source: freeswitch
+Version: 1.10.12-release-10222002881-a88d069d6f~bookworm
+Architecture: amd64
+Maintainer: SignalWire, Inc <support@signalwire.com>
+Installed-Size: 9506
+Depends: libfreeswitch1 (= 1.10.12-release-10222002881-a88d069d6f~bookworm)
+Homepage: https://freeswitch.org/
+Priority: optional
+Section: debug
+Filename: pool/main/f/freeswitch/libfreeswitch1-dbg_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+Size: 2969144
+SHA256: 1cf182d8bc35049ca1a7d429238c11fb46b02b2216284f8874543a5e831c4e12
+SHA1: 188e6fb6404210105477f930803216edf8bc721a
+MD5sum: 1bf4cf8f6935d79147e6fbb6de8a1718
+Description: debugging symbols for FreeSWITCH
+ FreeSWITCH is a scalable open source cross-platform telephony
+ platform designed to route and interconnect popular communication
+ protocols using audio, video, text or any other form of media.
+ .
+ This package contains debugging symbols for libfreeswitch1.
+

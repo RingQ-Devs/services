@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: RingQ-Devs
+Label: RingQ Services
+Architecture: amd64
+Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm

@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: RingQ-Devs
+Label: RingQ Services
+Suite: stable
+Codename: bookworm
+Date: Wed, 13 May 2026 06:09:32 UTC
+Architectures: amd64
+Components: main
+Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm
+MD5Sum:
+ 9921a4937e0b637e5962821da91b25dc 172206 main/binary-amd64/Packages
+ 546c77547a7370928ceb2027febebedb 23544 main/binary-amd64/Packages.gz
+ 43a8ae313261568804b527bff2a07daa 171 main/binary-amd64/Release
+SHA1:
+ dba38638aae07e126e7a4605477dc691c6721e4a 172206 main/binary-amd64/Packages
+ d2f92bf9efa20604f44a795f777b53a19b9ecd19 23544 main/binary-amd64/Packages.gz
+ 8803fe14acc7a540ffc04bd418dfbef0afc0995d 171 main/binary-amd64/Release
+SHA256:
+ d98b7d2ecbb3c4a3f86d17cd41f5eae255b7cb030443d0d079c99e91d6abb1f3 172206 main/binary-amd64/Packages
+ 398d10ee2387d1818aec01398911a03fb1ed9d0e8fe660f6104de64c52d59f74 23544 main/binary-amd64/Packages.gz
+ 305995b7c3505ef228e935c6a2bc467ca6641957ddb0a3cb0f9c81c9a9b12336 171 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEj9jU2OLRwPdRoOJYGcRwIKFlZdYFAmoEFZwACgkQGcRwIKFl
+Zdba5hAAnZhqH9vHmECzMoKhYIfVv7yuv17H36s21VQruvMmN785kW8NvPD89aYa
+lr1sRo5bX02MlIUhMox34NQ1NRrIJZ1FhhMQ/Wxv6bRFA87L857pzjQxb4Z0Szd+
+3Q/KXGzIjP0J7si/DaT1Wv+E6plow/TQSi0S9H0Qk1IHPUnO2c/Buxpx5KNZBCPg
+3uyoigRxkV+Bs3xUxdt2TxTT4TAHbToi4AxSeuwjZNrZswlcS4hkXY7OY4eqfFqd
+3lnP6yxJcPcQeagwACJcUlEDFCNR2dAz5xp64IbVT3BpBrGS7MeN5X5Xtyu7DbTf
+/eeBW95zBgrf7wsgsjLJ/XSuNpgvj91DlfGpcC7fMAuVRz6T7sxc3oenp30taFc5
+Kz6l8Cjlw11V4muWVYA3LkDKFYBOFaz/FyD/ZYPiT59IVTnLqJxr3z30so2DVtPa
+h8yuwUxv/Y33X4OhV7J2LJrsywcYILEbf2AQUFgq3tTWihFgFCp+q5xNvC34iDfO
+1PhiCu4qneh2WsUI7CDtf7yNJmrabCYCd35BsMXVkm9GsFdR9+3ARjMu/rRdz1ed
+XBSJiExg5N07UpYRcpsRjh86oItu+fQ0JRJafwCCZABBZAzzbdQz2TlBMAxGU8S/
+NPVd48yYUBarJYw00wI3OqurJLTCfFdMuxqPFHHdVfF6guYeTJM=
+=1+0I
+-----END PGP SIGNATURE-----
