@@ -8,6 +8,7 @@ on:
       - 'conf/**'
       - 'keys/**'
       - 'extras/**'
+      - 'fusionpbx-install/**'
       - '.github/workflows/publish-apt.yml'
   workflow_dispatch: {}
 
