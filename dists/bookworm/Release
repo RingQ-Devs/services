@@ -2,7 +2,7 @@ Origin: RingQ-Devs
 Label: RingQ Services
 Suite: stable
 Codename: bookworm
-Date: Wed, 13 May 2026 07:16:56 UTC
+Date: Wed, 13 May 2026 09:53:13 UTC
 Architectures: amd64
 Components: main
 Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm

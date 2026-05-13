@@ -5,7 +5,7 @@ Origin: RingQ-Devs
 Label: RingQ Services
 Suite: stable
 Codename: bookworm
-Date: Wed, 13 May 2026 07:16:56 UTC
+Date: Wed, 13 May 2026 09:53:13 UTC
 Architectures: amd64
 Components: main
 Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm
@@ -23,17 +23,17 @@ SHA256:
  305995b7c3505ef228e935c6a2bc467ca6641957ddb0a3cb0f9c81c9a9b12336 171 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEj9jU2OLRwPdRoOJYGcRwIKFlZdYFAmoEJWgACgkQGcRwIKFl
-Zda3Dg/+O3hdPIsnhji0lEH/8E+RseBiw1mnyxCG6H3THi1bvZzaAedb1Ma2P9PS
-LZLfRgF7eC9AJ4GuOzH4+uVkS78L1u0Xr75XX6jNNJjC7KsEtKml5xtg/zKXQ1dK
-+AwiWEIKd/TqygFD4tkl7PAitvRA9NAwo/JXw4Zwp53AT/TpZfc9vHQ/u8DCsNiW
-c6wkLaqlP+8n4cetGqCzuBea2my+5d7mTpkIFps1ayHWlgFYYJWufpyawSBpkh0c
-GcHu/UGm+DouanDJZwg2yA7oVrZWFe6zwYHMa4cwJ/Gyn8EiZr3FRjHOSeuURIHl
-+x4kWA9LIiSx2B7YxjKc3EpjWR9J5/0Af8ddYi1ZhZ+nX8EH8Gkmk80m9O570sjx
-h9OMTkzMw8vxLw2nTkx7rJObsj1Au/Vj/fWMquo/sq6+HXFNsvyQXGbyNUWwX5U4
-SQRt1LUcc4gS7E/UnJ9wezvg2+sXTase0dfQYQDw902TmCca/0F/AaADaPkuh+qx
-J6+LZKsqEIqX0WKluqyH0a276BIdLeN/Lqc7//r4C1Lr3aETBY3/szpf2k2nNMhG
-bMYS8Jsfvsz26bM0YpJ3QInDT05kvxMODeWid5YVGe/nR8DrUh7owtPrxnmi9RP/
-BD5MVJJIatF546neuGHOwvlmG2Lo/ayo2teQ6YPJNbwmoQPcvtg=
-=rDAB
+iQIzBAEBCgAdFiEEj9jU2OLRwPdRoOJYGcRwIKFlZdYFAmoESgkACgkQGcRwIKFl
+ZdY2KhAAskjHeYfqc9BpnZ4YlX94PziOXZn5p1ezEeosTUYG7lvPxsu9oVhgcO3g
+3EUFTiUtaUF6RafFL/o//65gQGUS7/qUU9rn2L+8+urwRrN6MHm1L30gAA5K0/Lg
+jNz7W96imTtwJqpcy3ogy/euwia3Qw4Zp0V0YaNo4lPHnbobZ4BSWka8k0qiatgT
+lEqECVp55gSWgDt8ZFGcQ9kmDIwrm+UaK0O+yvp5Z2YjN4Bs8w7aZ462tKvcwQUF
+mPEgP1qOrKIQwkmSj0zGeSLZc4ffUAHVrTowlraP4elpgTvJshPleYQenLYX7ZPU
+s9IHZgwIB+NCIpOcXZgDlUK9cBWQ9vLHatbaEHcWRXjOuko6F6/L3GJgqmBLPvQW
+lYPKJMrEhctNXcBh7jfLQMEb+1pEH7Eojozpy/dF+qHWDbibRMlVwh0M5B8kbdtv
+rMlEbne56OeUp3MJFUKN9sLJtsJJe5Tge0g4j+nqKUO/Ybpkf5Ch7CfnM515VY6R
+C0jM8BgIlXPZ82qPT9S49PJUUy8ohfGKJYm7AV+sLNQpexv5DkMFB6ug6vBLxLNG
++ub2EzfYoVC8vG0jBzhQ9F73stPGxBYEBAbRndxDAwbnat6EXNNoz4cxUPh29sDI
+sisg5jeTZ/pE1GIvQATEvFqdN0BTMd7B60Me9xATMIMJ0/AO/Wc=
+=bbYZ
 -----END PGP SIGNATURE-----
