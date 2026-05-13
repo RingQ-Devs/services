@@ -1,149 +1,212 @@
-# FreeSWITCH 1.10.12 apt Mirror — Setup Runbook
+# RingQ-Devs/services
 
-These artifacts populate the **`RingQ-Devs/services`** GitHub repo, which serves a signed apt mirror of FreeSWITCH 1.10.12 via GitHub Pages.
+Signed apt mirror for FreeSWITCH 1.10.12 (Debian bookworm) + vendored FusionPBX installer.
+Published via GitHub Pages at <https://ringq-devs.github.io/services/>.
 
-Background and design rationale: [`docs/PLAN-freeswitch-mirror.md`](../../docs/PLAN-freeswitch-mirror.md).
+Background and design rationale lives in the consumer repo: [`ringq_cloudapp/docs/PLAN-freeswitch-mirror.md`](https://github.com/RingQ-Devs/ringq_cloudapp/blob/main/docs/PLAN-freeswitch-mirror.md).
 
 ---
 
-## What's in this folder
+## Repo layout
 
-| Path | Purpose |
+```
+main branch (source of truth, not directly served)
+├── .github/workflows/publish-apt.yml   ← CI: rebuilds gh-pages on push
+├── conf/distributions                  ← reprepro config (codename, signing key)
+├── keys/                               ← public GPG keys (clients fetch these)
+│   ├── ringq-services-archive-keyring.asc   (ASCII)
+│   └── ringq-services-archive-keyring.gpg   (binary, used by signed-by=)
+├── pool/main/f/freeswitch/             ← FreeSWITCH .deb packages
+├── extras/                             ← source tarball, FusionPBX installer tarball (built by CI)
+├── fusionpbx-install/debian/           ← vendored FusionPBX installer (patched to use our mirror)
+└── README.md                           ← this file
+
+gh-pages branch (what GitHub Pages serves — built by CI)
+├── dists/bookworm/                     ← signed apt metadata
+│   ├── InRelease, Release, Release.gpg
+│   └── main/binary-amd64/Packages, Packages.gz
+├── pool/main/...                       ← .debs at reprepro-managed paths
+├── keys/                               ← same public keys as main
+└── extras/                             ← freeswitch source tarball + fusionpbx-install.tar.gz
+```
+
+Anything inside the `exclude_assets` list in `.github/workflows/publish-apt.yml` (currently `.github`, `conf`, `db`, `tools`, `fusionpbx-install`) is in `main` but NOT published to `gh-pages`. The `fusionpbx-install/` source tree is excluded because the workflow tars it into `extras/fusionpbx-install-debian.tar.gz` for clients to consume.
+
+---
+
+## How clients consume this mirror
+
+On every new RingQ VM (set up by `ringq_installer_*.sh`):
+
+```sh
+sudo curl -fsSL https://ringq-devs.github.io/services/keys/ringq-services-archive-keyring.gpg \
+    -o /usr/share/keyrings/ringq-services-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/ringq-services-archive-keyring.gpg] https://ringq-devs.github.io/services/ bookworm main" \
+    | sudo tee /etc/apt/sources.list.d/ringq-services.list
+
+# Pin to 1.10.x so apt can't pick 1.11.0 even if SignalWire's repo is also added.
+sudo tee /etc/apt/preferences.d/freeswitch-pin.pref >/dev/null <<'EOF'
+Package: freeswitch* libfreeswitch*
+Pin: version 1.10*
+Pin-Priority: 1001
+EOF
+
+sudo apt-get update
+sudo apt-get install -y freeswitch  # resolves to 1.10.12 from our mirror
+```
+
+---
+
+## Maintainer operations
+
+### Add or update a .deb in the mirror
+
+```sh
+# 1. Drop the .deb into the right pool path
+cp some-package_1.0_amd64.deb pool/main/f/freeswitch/   # adjust dir by source-package letter
+
+# 2. Commit + push
+git add pool/
+git commit -m "Add some-package 1.0"
+git push
+```
+
+CI auto-runs: `reprepro` rebuilds `dists/bookworm/` from scratch off the current `pool/`, signs `Release` / `InRelease` with the signing subkey from secret `APT_SIGNING_KEY`, and force-pushes `gh-pages`. Takes ~3 min.
+
+The workflow is idempotent — re-runs always rebuild from whatever's in `pool/`, so deleting a .deb from `main` and pushing removes it from the mirror on the next run.
+
+### Update the vendored FusionPBX installer
+
+The vendored copy at `fusionpbx-install/debian/` is a snapshot of `/usr/src/telephony-setup.sh/debian/` from a working RingQ server, with RingQ-specific patches applied to `resources/switch/package-release.sh` and `resources/switch/repo.sh` (uses our mirror instead of `signalwire.com`, populates `/etc/freeswitch/` from vanilla templates, no sound packages).
+
+```sh
+# Snapshot the current upstream from a working server
+ssh root@<healthy-ringq-server> 'tar -czf /tmp/fpbx.tar.gz -C /usr/src telephony-setup.sh'
+scp root@<healthy-ringq-server>:/tmp/fpbx.tar.gz /tmp/
+
+# Replace the local tree
+rm -rf fusionpbx-install
+mkdir fusionpbx-install
+tar -xzf /tmp/fpbx.tar.gz -C fusionpbx-install --strip-components=1
+
+# Strip non-Debian OS dirs (we only ship Debian)
+rm -rf fusionpbx-install/centos fusionpbx-install/devuan fusionpbx-install/freebsd \
+       fusionpbx-install/ubuntu fusionpbx-install/windows
+
+# Re-apply the RingQ patches to resources/switch/package-release.sh and repo.sh
+# (see git history for the exact diffs — search for "RingQ patch")
+
+git add fusionpbx-install/
+git commit -m "Refresh vendored FusionPBX installer from upstream"
+git push
+```
+
+CI re-tars `fusionpbx-install/debian/` into `extras/fusionpbx-install-debian.tar.gz` on push.
+
+### Verify the mirror is live after a push
+
+```sh
+# Metadata signed and reachable?
+curl -fsSL https://ringq-devs.github.io/services/dists/bookworm/InRelease > /tmp/InRelease
+curl -fsSL https://ringq-devs.github.io/services/keys/ringq-services-archive-keyring.gpg > /tmp/keyring.gpg
+gpg --no-default-keyring --keyring /tmp/keyring.gpg --verify /tmp/InRelease
+
+# Specific .deb fetchable?
+curl -fsI https://ringq-devs.github.io/services/pool/main/f/freeswitch/freeswitch_1.10.12-release-10222002881-a88d069d6f~bookworm_amd64.deb
+
+# FusionPBX tarball has the expected top-level layout (debian/ not fusionpbx-install/debian/)?
+curl -fsSL https://ringq-devs.github.io/services/extras/fusionpbx-install-debian.tar.gz | tar -tzf - | head -3
+```
+
+### Rotate the GPG signing subkey (yearly)
+
+On the offline machine that holds the master key:
+
+```sh
+export GNUPGHOME=/path/to/offline/.gnupg
+gpg --edit-key <master-fingerprint>
+  > addkey                # RSA 4096, sign-only, 1 year expiry
+  > save
+
+# Export the new subkey for CI
+gpg --armor --export-secret-subkeys <new-subkey-id!> > new-signing-subkey.asc
+```
+
+In GitHub: Settings → Secrets and variables → Actions → update `APT_SIGNING_KEY` with the contents of `new-signing-subkey.asc`, and update `RINGQ_SIGNING_KEY_ID` with the new subkey fingerprint.
+
+Re-export the public keyring (master + new subkey) and commit:
+
+```sh
+gpg --export <master-fingerprint> > keys/ringq-services-archive-keyring.gpg
+gpg --armor --export <master-fingerprint> > keys/ringq-services-archive-keyring.asc
+git add keys/ && git commit -m "Rotate signing subkey" && git push
+```
+
+Servers don't need any action — they already trust the master, which signs the new subkey.
+
+### Emergency: revoke a compromised master
+
+1. Generate revocation cert offline (you saved one at bootstrap)
+2. Import + push: `gpg --import master-revocation.asc && gpg --armor --export <fp> > keys/...`
+3. Generate a brand new master + subkey, repeat bootstrap
+4. Update apt sources on the fleet to use new keyring path (one-shot Redis flag via `jobs.sh`)
+
+---
+
+## CI workflow (`.github/workflows/publish-apt.yml`)
+
+Triggers on push to `main` when these paths change:
+
+- `pool/**`, `conf/**`, `keys/**`, `extras/**`, `fusionpbx-install/**`, `.github/workflows/publish-apt.yml`
+
+What it does in order:
+
+1. Import signing subkey from `APT_SIGNING_KEY` secret, mark trusted, prime gpg-agent
+2. Migrate any legacy `pool/main/_incoming/*.deb` to `pool/main/f/freeswitch/` (idempotent)
+3. Wipe `dists/` and `db/`, run `reprepro includedeb` for every .deb in `pool/main/f/freeswitch/`
+4. Verify `dists/bookworm/InRelease` is signed and verifies against the public keyring
+5. Smoke-test `apt-get update` inside a `debian:bookworm-slim` container against the local repo state
+6. Tar `fusionpbx-install/debian/` into `extras/fusionpbx-install-debian.tar.gz` (with `debian/` at top level)
+7. Force-push the working tree (minus `exclude_assets`) to the `gh-pages` branch via `peaceiris/actions-gh-pages@v3`
+8. Smoke-test the live URL (non-fatal — only a warning on first run before Pages is enabled)
+
+GitHub Pages serves the `gh-pages` branch root.
+
+### Required secrets
+
+| Secret | Purpose |
 |---|---|
-| `conf/distributions` | reprepro config — declares the `bookworm` suite |
-| `scripts/bootstrap-gpg.sh` | One-time GPG master + signing-subkey generator. **Run on your local machine, not a server.** |
-| `scripts/download-fs-debs.sh` | Bulk-downloads every working 1.10.12 `.deb` from SignalWire. Run on a RingQ server with `auth.conf` configured. |
-| `scripts/build-and-publish.sh` | Local dry-run of what the GitHub Actions workflow does — useful for testing before pushing |
-| `workflows/publish-apt.yml` | GitHub Actions workflow — lives at `.github/workflows/publish-apt.yml` in the services repo |
+| `APT_SIGNING_KEY` | ASCII-armored export of the private signing subkey (master stays offline) |
+| `APT_SIGNING_KEY_PASSPHRASE` | Passphrase for the signing subkey |
+| `RINGQ_SIGNING_KEY_ID` | Full fingerprint of the signing subkey (used by `reprepro` `SignWith` in `conf/distributions`) |
 
 ---
 
-## End-to-end setup
+## Troubleshooting
 
-### Step 1 — Create the GitHub repo (your action, ~30 sec)
+### "Workflow ran but the live tarball doesn't have my change"
 
-1. Go to https://github.com/organizations/RingQ-Devs/repositories/new
-2. Repository name: **`services`**
-3. Visibility: Private (recommended) or Public (also fine — apt-source data is non-sensitive)
-4. Initialize: leave empty (no README, no gitignore)
-5. Click **Create repository**
+The path-filter likely didn't match. Check `.github/workflows/publish-apt.yml`'s `on.push.paths`. The workflow file itself triggers re-runs — pushing a one-line tweak to it forces a rebuild against the current state of `main`.
 
-Don't clone yet. Come back when done.
+### "Workflow failed on `gpg --verify`"
 
-### Step 2 — Generate GPG keys (your action, ~2 min)
+Either the signing key wasn't imported (check `APT_SIGNING_KEY` secret is intact and base64-clean), or `conf/distributions`'s `SignWith:` fingerprint doesn't match the imported key.
 
-On your **local machine** (not a server — the private master key must stay offline):
+### "apt clients see version `1.11.0`, not `1.10.12`"
 
-```bash
-cd /Users/jaybayron/Herd/Github/ringq_cloudapp/tools/freeswitch-mirror
-bash scripts/bootstrap-gpg.sh
-```
+The pin file isn't in place on the client. See "How clients consume this mirror" above — `apt-mark hold` alone isn't enough; the version pin must exist at `/etc/apt/preferences.d/freeswitch-pin.pref`.
 
-The script will:
-1. Generate an Ed25519 master key (5-year expiry).
-2. Generate an RSA 4096 signing subkey (1-year expiry).
-3. Print:
-   - The **public keyring** (binary) → save to `keys/ringq-services-archive-keyring.gpg` in the services repo.
-   - The **signing subkey private export** → paste into GitHub Secret `APT_SIGNING_KEY`.
-   - The **passphrase** → paste into GitHub Secret `APT_SIGNING_KEY_PASSPHRASE`.
-4. Print the master-key revocation cert → save **offline** (1Password / vault), NOT in any repo.
+### "GitHub size warning on push"
 
-### Step 3 — Set GitHub Actions secrets (your action, ~1 min)
+The 50MB `freeswitch-sounds-en-us-callie_*.deb` triggers the cosmetic GitHub warning. Push succeeds — file is under the hard 100MB limit. If you ever want to silence it, recompress with `xz` (~30MB).
 
-In the `RingQ-Devs/services` repo:
-1. **Settings → Secrets and variables → Actions → New repository secret**
-2. Add two secrets using the values from Step 2:
-   - `APT_SIGNING_KEY` — the ASCII-armored exported subkey
-   - `APT_SIGNING_KEY_PASSPHRASE` — the passphrase
+### "Need to fix a broken FreeSWITCH on a server"
 
-### Step 4 — Bulk-download the .deb files (your action, ~5 min)
-
-SSH into any healthy RingQ production server (it already has SignalWire's `auth.conf`). Then:
-
-```bash
-# scp the download script up to the server
-scp scripts/download-fs-debs.sh root@<server-ip>:/tmp/
-
-# then on the server:
-ssh root@<server-ip>
-bash /tmp/download-fs-debs.sh /tmp/fs-mirror-pool
-```
-
-When done, pull the directory back to your laptop:
-```bash
-scp -r root@<server-ip>:/tmp/fs-mirror-pool ./
-```
-
-You should now have a `fs-mirror-pool/` folder with ~45 `.deb` files.
-
-### Step 5 — Populate and push the services repo (your action, ~2 min)
-
-```bash
-git clone git@github.com:RingQ-Devs/services.git ~/RingQ-services
-cd ~/RingQ-services
-
-# Copy the artifacts from this folder
-cp -r /Users/jaybayron/Herd/Github/ringq_cloudapp/tools/freeswitch-mirror/conf .
-mkdir -p .github/workflows
-cp /Users/jaybayron/Herd/Github/ringq_cloudapp/tools/freeswitch-mirror/workflows/publish-apt.yml .github/workflows/
-cp /Users/jaybayron/Herd/Github/ringq_cloudapp/tools/freeswitch-mirror/README.md ./README.md
-
-# Stage the public key (from Step 2) and the .deb files
-mkdir -p keys pool/main
-cp /path/to/ringq-services-archive-keyring.gpg keys/
-
-# Move .debs into the pool — reprepro will sort them on first run
-mkdir -p pool/main/_incoming
-cp ~/fs-mirror-pool/*.deb pool/main/_incoming/
-
-# Commit and push
-git add .
-git commit -m "Initial FreeSWITCH 1.10.12 mirror"
-git push -u origin main
-```
-
-### Step 6 — Watch the workflow build the mirror (~3 min)
-
-The push triggers `.github/workflows/publish-apt.yml`. It will:
-1. Import the signing subkey from secrets
-2. Run `reprepro includedeb bookworm pool/main/_incoming/*.deb`
-3. Build `dists/bookworm/InRelease` and friends
-4. Force-push the published tree to `gh-pages` branch
-
-Watch progress at `https://github.com/RingQ-Devs/services/actions`.
-
-### Step 7 — Enable GitHub Pages (your action, ~30 sec)
-
-Once the workflow has pushed `gh-pages`:
-
-1. **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: **`gh-pages`** / Folder: **`/ (root)`**
-4. Save.
-
-Within ~1 minute, the mirror is live at:
-`https://ringq-devs.github.io/services/`
-
-### Step 8 — Smoke test (my action, you observe)
-
-Tell me the mirror is live and I'll run the verification steps from `docs/PLAN-freeswitch-mirror.md` Phase 5 against a fresh Debian container.
-
-### Step 9 — Wire the mirror into RingQ scripts (my action)
-
-Once Step 8 passes, I edit:
-- `globaldownload/ringq_installer_staging.sh` + `ringq_installer.sh` → point at the mirror
-- `ringq/app/scripts/jobs.sh` → tighten apt pin
+Manual recovery runbook is in [`ringq_cloudapp/ringq/app/scripts/jobs.sh`](https://github.com/RingQ-Devs/ringq_cloudapp/blob/main/ringq/app/scripts/jobs.sh)'s drift-heal logic, or trigger it remotely by setting `restart_jobs=1` in Redis on the broken server.
 
 ---
 
-## After it's live
+## Related repos
 
-- **Adding a new module .deb**: drop into `pool/main/_incoming/`, commit + push. CI republishes.
-- **Yearly subkey rotation**: re-run `bootstrap-gpg.sh` with `--rotate-subkey`, update the secret, push.
-- **Emergency key rotation**: see `docs/PLAN-freeswitch-mirror.md` Phase 4.3.
-
----
-
-## Rollback
-
-If the mirror breaks for any reason, existing servers are unaffected (they're held + pinned). For new installs, revert the installer's apt source block back to SignalWire — see `docs/PLAN-freeswitch-mirror.md` Phase 6.
+- [`ringq_cloudapp`](https://github.com/RingQ-Devs/ringq_cloudapp) — the RingQ application code, including the installer scripts (`globaldownload/ringq_installer_*.sh`) and the per-server runtime helper (`ringq/app/scripts/jobs.sh`) that talk to this mirror
+- `vupdate.ringq.io` — RingQ's file server, still rsynced for `baseapp/1-10` artifacts (this mirror replaced `baseapp/11`)
