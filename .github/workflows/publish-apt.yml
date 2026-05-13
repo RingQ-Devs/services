@@ -1,0 +1,130 @@
+name: publish-apt
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pool/**'
+      - 'conf/**'
+      - 'keys/**'
+      - '.github/workflows/publish-apt.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needed to push gh-pages branch
+
+concurrency:
+  group: publish-apt
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Install reprepro and gnupg
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y reprepro gnupg
+
+      - name: Import signing subkey and prime gpg-agent
+        env:
+          APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
+          APT_SIGNING_KEY_PASSPHRASE: ${{ secrets.APT_SIGNING_KEY_PASSPHRASE }}
+          RINGQ_SIGNING_KEY_ID: ${{ secrets.RINGQ_SIGNING_KEY_ID }}
+        run: |
+          mkdir -p ~/.gnupg
+          chmod 700 ~/.gnupg
+          cat > ~/.gnupg/gpg.conf <<'EOF'
+          pinentry-mode loopback
+          batch
+          EOF
+          cat > ~/.gnupg/gpg-agent.conf <<'EOF'
+          allow-loopback-pinentry
+          default-cache-ttl 7200
+          max-cache-ttl 7200
+          EOF
+          gpgconf --kill all || true
+          printf '%s' "$APT_SIGNING_KEY" | gpg --batch --import
+          gpg --list-secret-keys
+          # Mark the key ultimately trusted so reprepro doesn't refuse to sign with it
+          echo "$RINGQ_SIGNING_KEY_ID:6:" | gpg --import-ownertrust
+          # Prime gpg-agent: do a one-off sign so the passphrase is cached for the
+          # rest of the job. reprepro and later steps then sign without prompting.
+          echo "prime" | gpg --batch --pinentry-mode loopback \
+              --passphrase "$APT_SIGNING_KEY_PASSPHRASE" \
+              --local-user "$RINGQ_SIGNING_KEY_ID" \
+              --sign --output /dev/null
+          echo "✓ gpg-agent primed"
+
+      - name: Stage incoming .debs
+        id: stage
+        run: |
+          mkdir -p pool/main/_incoming
+          count=$(ls -1 pool/main/_incoming/*.deb 2>/dev/null | wc -l)
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+          if [ "$count" -eq 0 ]; then
+            echo "No .deb files in pool/main/_incoming/. Nothing to publish."
+          else
+            echo "$count .deb file(s) staged for inclusion."
+            ls -lh pool/main/_incoming/*.deb
+          fi
+
+      - name: Build apt repo with reprepro
+        if: steps.stage.outputs.count != '0'
+        env:
+          RINGQ_SIGNING_KEY_ID: ${{ secrets.RINGQ_SIGNING_KEY_ID }}
+        run: |
+          # reprepro picks up SignWith from conf/distributions. With our gpg-agent
+          # primed and the key marked ultimately trusted, signing is non-interactive.
+          for deb in pool/main/_incoming/*.deb; do
+            echo "Including: $deb"
+            reprepro --basedir . includedeb bookworm "$deb"
+          done
+          # Archive processed debs so they aren't re-included next run
+          mkdir -p pool/main/_archived
+          mv pool/main/_incoming/*.deb pool/main/_archived/ 2>/dev/null || true
+
+      - name: Verify Release is signed
+        if: steps.stage.outputs.count != '0'
+        run: |
+          test -f dists/bookworm/InRelease
+          test -f dists/bookworm/Release.gpg
+          gpg --verify dists/bookworm/InRelease
+          echo "✓ InRelease signature verifies"
+
+      - name: Smoke test against bookworm container
+        run: |
+          # Run a quick apt-get update inside a docker container pointing at the
+          # repo files on disk. Catches Packages.gz / metadata errors before publish.
+          docker run --rm -v "$PWD":/repo debian:bookworm-slim bash -c '
+            set -e
+            apt-get update >/dev/null 2>&1
+            apt-get install -y ca-certificates >/dev/null
+            cp /repo/keys/ringq-services-archive-keyring.gpg /usr/share/keyrings/
+            echo "deb [signed-by=/usr/share/keyrings/ringq-services-archive-keyring.gpg] file:///repo bookworm main" \
+              > /etc/apt/sources.list.d/ringq.list
+            apt-get update
+            apt-cache madison freeswitch | head -5
+          '
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .
+          exclude_assets: '.github,conf,pool/main/_incoming,tools'
+          force_orphan: false
+          enable_jekyll: false
+          commit_message: "publish: ${{ github.sha }}"
+
+      - name: Live smoke test (post-publish)
+        run: |
+          # Give Pages a moment to flip over (CDN TTL ~10min, but new files usually 30-60s)
+          sleep 30
+          curl -fsSL https://ringq-devs.github.io/services/dists/bookworm/InRelease >/tmp/InRelease
+          gpg --verify /tmp/InRelease
+          echo "✓ live InRelease verifies"

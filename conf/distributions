@@ -1,0 +1,8 @@
+Codename: bookworm
+Suite: stable
+Components: main
+Architectures: amd64
+SignWith: 8FD8D4D8E2D1C0F751A0E25819C47020A16565D6
+Description: RingQ Services mirror — FreeSWITCH 1.10.12 for Debian bookworm
+Origin: RingQ-Devs
+Label: RingQ Services
